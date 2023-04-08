@@ -1,0 +1,263 @@
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+i,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+
+/* Default Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E61E2A;
+    color: #fff;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-nav-icon {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #E61E2A;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* Responsive Collapse Navigation Bar (Hambuger Menu) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+    }
+
+    .mobile-nav-icon:hover+.navbar {
+        display: block;
+    }
+
+    .navbar:hover {
+        display: block;
+    }
+}
+
+
+/* 3-column Layout */
+h1 {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.book {
+	width: calc(33.33% - 40px);
+	margin-bottom: 40px;
+}
+
+.book img:hover {
+    cursor: pointer;
+    transform: rotateY(-28deg) rotateZ(-2deg) scale(1.02);
+    -webkit-backface-visibility: hidden;
+    box-shadow: 1px 3px 2px burlywood, 20px 8px 0 burlywood;
+    /* transform: scale(1.02); */
+}
+
+.book img:hover::after {
+    content: " ";
+    display: block;
+    opacity: 1;
+    width: 172px;
+    position: relative;
+    left: 8px;
+    background: linear-gradient(-180deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+.book img:hover::before {
+    transform: translateY(9px);
+    opacity: 1;
+  
+}
+
+.book img {
+	width: 100%;
+	height: auto;
+    object-fit: contain;
+    transition: all .5s ease-in-out;
+    transform-origin: left center 0px;
+    transform-style: preserve-3d;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.book h2 {
+	font-size: 24px;
+	margin: 20px 0 10px;
+}
+
+.book p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+/* Responsive 1-column Layout */
+@media only screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+        padding: 0px 30px;
+	}
+	
+	.book {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+}
