@@ -88,6 +88,7 @@ body {
   -moz-animation-timing-function: linear;
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  overflow-x: hidden;
 }
 
 
@@ -99,7 +100,7 @@ body {
     background-color: #E61E2A;
     color: #fff;
     height: 50px;
-    padding: 0 20px;
+    padding: 0 20px;  
 }
 
 .navbar ul {
@@ -107,6 +108,11 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
 }
 
 .navbar li {
@@ -120,16 +126,13 @@ body {
 }
 
 .mobile-nav-icon {
+    color: black;
     text-align: center;
     width: 30px;
     height: 30px;
     padding: 5px;
-    font-size: 20px;
-    background-color: #E61E2A;
+    font-size: 50px;
     display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 
@@ -140,6 +143,7 @@ body {
         align-items: flex-start;
         height: auto;
         padding: 5px 20px;
+        position: fixed;
     }
 
     .navbar ul {
@@ -159,6 +163,11 @@ body {
 
     .mobile-nav-icon {
         display: block;
+        position: fixed;
+    }
+
+    .mobile-nav-icon:hover {
+        
     }
 
     .mobile-nav-icon:hover+.navbar {
@@ -186,6 +195,11 @@ h1 {
 .book {
 	width: calc(33.33% - 40px);
 	margin-bottom: 40px;
+}
+
+.book:hover {
+    padding: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .book img:hover {
@@ -253,11 +267,12 @@ button {
 @media only screen and (max-width: 768px) {
 	.container {
 		flex-direction: column;
+        align-items: center;
         padding: 0px 30px;
 	}
 	
 	.book {
-		width: 100%;
+		width: 50%;
 		margin-bottom: 40px;
 	}
 }
