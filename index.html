@@ -1,105 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Example Media Query</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="book-section.css" />
+
+    <title>Bookstore hackathon</title>
   </head>
-
   <body>
-    <div class="logo">
-      <img src="book-logo1.jpeg" alt="Bookstore Logo" width="80" />
-    </div>
-    <div class="mobile-nav-icon">☰</div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#">RMIT Store</a></li>
-        <li><a href="#">Clothing</a></li>
-        <li><a href="#">Accessories</a></li>
-        <li><a href="#">Stationery</a></li>
-        <li><a href="#">Course</a></li>
-        <li><a href="#">Sales</a></li>
-        <li><a href="#">Search</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-
-    <h1>MONTHLY PICKS</h1>
-    <div class="container">
-      <div class="book">
-        <img src="book-placeholder.jpeg" alt="book-placeholder" />
-        <h2>Title placeholder</h2>
-        <p>Description placeholder</p>
-        <p>price placeholder AUD</p>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="book">
-        <img src="book-placeholder.jpeg" alt="book-placeholder" />
-        <h2>Title placeholder</h2>
-        <p>Description placeholder</p>
-        <p>price placeholder AUD</p>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="book">
-        <img src="book-placeholder.jpeg" alt="book-placeholder" />
-        <h2>Title placeholder</h2>
-        <p>Description placeholder</p>
-        <p>price placeholder AUD</p>
-        <button>Add to Cart</button>
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <h1>BESTSELLERS</h1>
-    <div class="container">
-      <div class="book">
-        <img src="book-placeholder.jpeg" alt="book-placeholder" />
-        <h2>Title placeholder</h2>
-        <p>Description placeholder</p>
-        <p>price placeholder AUD</p>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="book">
-        <img src="book-placeholder.jpeg" alt="book-placeholder" />
-        <h2>Title placeholder</h2>
-        <p>Description placeholder</p>
-        <p>price placeholder AUD</p>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="book">
-        <img src="book-placeholder.jpeg" alt="book-placeholder" />
-        <h2>Title placeholder</h2>
-        <p>Description placeholder</p>
-        <p>price placeholder AUD</p>
-        <button>Add to Cart</button>
+    <div class="landing">
+      <div class="content">
+        <img src="book-logo1.jpeg" class="logo" alt="Traversy Media" />
+        <div class="title">Welcome To Traversy Media</div>
+        <!-- <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, vel.
+        </div> -->
       </div>
     </div>
 
-    <div class="book">
-      <img src="book-placeholder.jpeg" alt="book-placeholder" />
-      <h2>Title placeholder</h2>
-      <p>Description placeholder</p>
-      <p>price placeholder AUD</p>
-      <button>Add to Cart</button>
+    <div class="sketchfab-embed-wrapper">
+      <iframe
+        title="Book Cover"
+        frameborder="0"
+        allowfullscreen="false"
+        mozallowfullscreen="false"
+        webkitallowfullscreen="false"
+        allow="autoplay; xr-spatial-tracking"
+        xr-spatial-tracking
+        execution-while-out-of-viewport
+        execution-while-not-rendered
+        web-share
+        width="2560"
+        height="2560"
+        src="https://sketchfab.com/models/c370f7e06e3c4b55ac35cf48008c77ff/embed?autostart=1&scrollwheel=0&camera=0&ui_stop=0&autospin=0.04"
+      >
+      </iframe>
     </div>
 
-    <div class="book">
-      <img src="book-placeholder.jpeg" alt="book-placeholder" />
-      <h2>Title placeholder</h2>
-      <p>Description placeholder</p>
-      <p>price placeholder AUD</p>
-      <button>Add to Cart</button>
-    </div>
+    <section class="book-section">
+      <div class="container grid-3 center">
+        <article class="book book--1">
+          <div class="book__info-hover"></div>
+          <div class="book__img"></div>
+          <a href="#" class="book_link">
+            <div class="book__img--hover"></div>
+          </a>
+          <div class="book__info">
+            <span class="book__category"> Recipe</span>
+            <h3 class="book__title">Crisp Spanish tortilla Matzo brei</h3>
+            <span class="book__by"
+              >by
+              <a href="#" class="book__author" title="author"
+                >Celeste Mills</a
+              ></span
+            >
+          </div>
+        </article>
 
-    <div class="book">
-      <img src="book-placeholder.jpeg" alt="book-placeholder" />
-      <h2>Title placeholder</h2>
-      <p>Description placeholder</p>
-      <p>price placeholder AUD</p>
-      <button>Add to Cart</button>
-    </div>
+        <article class="book book--1">
+          <div class="book__info-hover"></div>
+          <div class="book__img"></div>
+          <a href="#" class="book_link">
+            <div class="book__img--hover"></div>
+          </a>
+          <div class="book__info">
+            <span class="book__category"> Recipe</span>
+            <h3 class="book__title">Crisp Spanish tortilla Matzo brei</h3>
+            <span class="book__by"
+              >by
+              <a href="#" class="book__author" title="author"
+                >Celeste Mills</a
+              ></span
+            >
+          </div>
+        </article>
+
+        <article class="book book--1">
+          <div class="book__info-hover"></div>
+          <div class="book__img"></div>
+          <a href="#" class="book_link">
+            <div class="book__img--hover"></div>
+          </a>
+          <div class="book__info">
+            <span class="book__category"> Recipe</span>
+            <h3 class="book__title">Crisp Spanish tortilla Matzo brei</h3>
+            <span class="book__by"
+              >by
+              <a href="#" class="book__author" title="author"
+                >Celeste Mills</a
+              ></span
+            >
+          </div>
+        </article>
+      </div>
+      <hr />
+      <div class="container grid-3 center">
+        <div>
+          <h3>YouTube</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            reiciendis!
+          </p>
+        </div>
+        <div>
+          <h3>Courses</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            reiciendis!
+          </p>
+        </div>
+        <div>
+          <h3>Freelancing Projects</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            reiciendis!
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="container grid-3 center">
+        <div>
+          <h3>YouTube</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            reiciendis!
+          </p>
+        </div>
+        <div>
+          <h3>Courses</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            reiciendis!
+          </p>
+        </div>
+        <div>
+          <h3>Freelancing Projects</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            reiciendis!
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
