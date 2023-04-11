@@ -2,12 +2,16 @@
     --primary-color: rgba(13, 110, 139, 0.75);
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
-  }
-  
-* {
+}
+
+*, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {

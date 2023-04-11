@@ -187,6 +187,6 @@ color: #868686;
 
   .sketchfab-embed-wrapper {
     pointer-events: none;
-    transform: translateY(5px);
+    transform: translateY(3px);
   }
 }
