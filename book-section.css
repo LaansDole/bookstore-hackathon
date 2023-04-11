@@ -6,12 +6,12 @@
     display: flex;
 	  flex-wrap: wrap;
 	  justify-content: space-between;
-    transform: translateX(50px);
+    /* transform: translateX(50px); */
 }
 
 .grid-3 {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 100px;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -19,28 +19,6 @@
     text-align: center;
     margin: auto;
 }
-
-.custom-shape-divider-top-1681211438 {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg) translateY(8px);
-}
-
-.custom-shape-divider-top-1681211438 svg {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 180px;
-}
-
-.custom-shape-divider-top-1681211438 .shape-fill {
-  fill: #3AD3CD;
-}
-
 
 .book--1 .book__img, .book--1 .book__img--hover {
   background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
@@ -82,7 +60,7 @@ top: 0;
 .book {
 transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
 background-color: #fff;
-  width: 75%;
+  width: 100%;
 position: relative;
 border-radius: 12px;
 overflow: hidden;
@@ -144,31 +122,20 @@ color: #868686;
   opacity: 1;
 }
 
-.sketchfab-embed-wrapper {
-  width: 100%;
-  display: flex;
-  object-fit: contain;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: absolute;
-  opacity:0.7;
-  z-index: 0;
-  transform: translateY(-1200px);
-}
-
 @media (max-width: 780px) {
 
   .container {
-    overflow-y: scroll; 
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
     display: block;
-    transform: translateX(-5px);
+    transform: translateX(-1px);
   }
 
   .grid-3 {
     grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .book {
+    width: 75%;
   }
 
   .book-section div {
@@ -183,10 +150,5 @@ color: #868686;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .sketchfab-embed-wrapper {
-    pointer-events: none;
-    transform: translateY(3px);
   }
 }

@@ -1,0 +1,28 @@
+.custom-shape-divider-top-1681211438 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg) translateY(8px);
+}
+
+.custom-shape-divider-top-1681211438 svg {
+position: relative;
+display: block;
+width: 100%;
+height: 200px;
+}
+
+.custom-shape-divider-top-1681211438 .shape-fill {
+fill: #60A1AA;
+}
+
+.custom-shape-divider-top-1681211438 .section-title {
+    transform: rotate(180deg) translateY(-100px);
+    position: relative;
+    z-index: 1;
+    color: #605567;
+    font-size: 3.2rem;
+}

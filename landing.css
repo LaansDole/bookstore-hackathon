@@ -1,8 +1,20 @@
 .landing {
   position: relative;
-  z-index: 999;
+  z-index: 2;
   overflow-x: hidden;
-  overflow-y: hidden;
+  height: 100%;
+}
+
+.landing .bg-layer {
+  position: absolute;
+  height: 70vh;
+  width: 125%;
+  background-image: url(cover-bookstore.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  z-index: 0;
 }
 
 .landing::after {
@@ -13,10 +25,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: block;
-    filter: blur(7px);
-    -webkit-filter: blur(7px);
+    display: flex;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
     transition: all 700ms;
+    overflow: hidden;
 }
   
 .landing:hover::after {
