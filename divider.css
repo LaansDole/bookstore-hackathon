@@ -1,0 +1,69 @@
+.custom-shape-divider-top-1681211438 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg) translateY(8px);
+}
+
+.custom-shape-divider-top-1681211438 svg {
+position: relative;
+display: block;
+width: 100%;
+height: 200px;
+}
+
+.custom-shape-divider-top-1681211438 .shape-fill {
+fill: #60A1AA;
+}
+
+.custom-shape-divider-top-1681211438 h1 {
+    transform: rotate(180deg) translateY(-100px);
+    position: relative;
+    z-index: 1;
+    color: #605567;
+    font-size: 2.5rem;
+}
+
+.custom-shape-divider-bottom-1681232129 {
+    position: relative;
+    margin-top: -250px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1681232129 h1 {
+    position: inherit;
+    z-index: 2;
+    color: #605567;
+    font-size: 2.5rem;
+}
+
+.custom-shape-divider-bottom-1681232129 .down {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 338px;
+}
+
+.custom-shape-divider-bottom-1681232129 .up {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 338px;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1681232129 .shape-fill {
+    fill: #FC5185;
+}
+
+@media (max-width: 600px) {
+    .custom-shape-divider-top-1681211438 h1 {
+        font-size: 2.2rem;
+        transform: rotate(180deg) translate(30px, -115px);
+    }
+}
