@@ -1,20 +1,22 @@
 .landing {
   position: relative;
-  z-index: 1;
+  z-index: 999;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .landing::after {
     content: '';
-    height: 100vh;
-    width: 100%;
-    background-image: url(https://image.ibb.co/gzOBup/showcase.jpg);
+    height: 70vh;
+    width: 125%;
+    background-image: url(cover-bookstore.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-    transition: all 1000ms;
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+    transition: all 700ms;
 }
   
 .landing:hover::after {
@@ -32,22 +34,23 @@ position: absolute;
 z-index: 1;
 top: 10%;
 left: 50%;
-margin-top: 105px;
+margin-top: 40px;
 margin-left: -145px;
 width: 300px;
-height: 350px;
+height: 400px;
 text-align: center;
-transition: all 1000ms;
+transition: all 700ms;
 }
 
 .content .logo {
-height: 100px;
-width: 100px;
+height: 250px;
+width: 250px;
 }
 
 .content .title {
-font-size: 2.2rem;
+font-size: 2.5rem;
 margin-top: 1rem;
+color: white;
 }
 
 /* .content .text {
@@ -55,9 +58,14 @@ line-height: 1.7;
 margin-top: 1rem;
 } */
   /* Small Screens */
-@media (max-width: 780px) {
+@media (max-width: 780px), (max-height: 600px) {
     .landing::after {
       height: 50vh;
+    }
+
+    .landing {
+      overflow-x: hidden;
+      overflow-y: hidden;
     }
   
     .content {
@@ -68,6 +76,10 @@ margin-top: 1rem;
     .content .logo {
       height: 100px;
       width: 100px;
+    }
+
+    .content .title {
+      font-size: 2.2rem;
     }
   
     /* .content .text {
