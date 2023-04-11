@@ -1,3 +1,8 @@
+.landing {
+  position: relative;
+  z-index: 1;
+}
+
 .landing::after {
     content: '';
     height: 100vh;

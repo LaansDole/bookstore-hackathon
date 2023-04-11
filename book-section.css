@@ -5,10 +5,10 @@
     padding: 4rem 1rem;
     display: flex;
 	  flex-wrap: wrap;
-	  justify-content: space-around;
-    
+	  justify-content: space-between;
+    transform: translateX(50px);
 }
-  
+
 .grid-3 {
     display: grid;
     grid-gap: 20px;
@@ -20,77 +20,119 @@
     margin: auto;
 }
 
+.book--1 .book__img, .book--1 .book__img--hover {
+  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.book__img {
+visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 235px;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+
+}
+
+.book__info-hover {
+  position: absolute;
+  padding: 16px;
+width: 100%;
+opacity: 0;
+top: 0;
+}
+
+.book__img--hover {
+transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+position: absolute;
+  height: 235px;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+}
+
 .book {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
+transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+background-color: #fff;
+  width: 75%;
+position: relative;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+
 }
 
 .book:hover {
-  padding: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+  transform: scale(1.10, 1.10);
 }
 
-.book img:hover {
-  cursor: pointer;
-  transform: rotateY(-28deg) rotateZ(-2deg) scale(1.02);
-  -webkit-backface-visibility: hidden;
-  box-shadow: 1px 3px 2px burlywood, 20px 8px 0 burlywood;
-  /* transform: scale(1.02); */
+.book__info {
+z-index: 2;
+background-color: #fff;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+ padding: 16px 24px 24px 24px;
 }
 
-.book img:hover::after {
-  content: " ";
-  display: block;
-  opacity: 1;
-  width: 172px;
+.book__category {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+color: #868686;
+}
+
+.book__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.book__by {
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.book__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #AD7D52;
+}
+
+.book:hover .book__img--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.book:hover .book__info {
+  background-color: transparent;
   position: relative;
-  left: 8px;
-  background: linear-gradient(-180deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 60%);
 }
 
-.book img:hover::before {
-  transform: translateY(9px);
+.book:hover .book__info-hover {
   opacity: 1;
-
 }
 
-.book img {
-width: 100%;
-height: auto;
+.sketchfab-embed-wrapper {
+  width: 100%;
+  display: flex;
   object-fit: contain;
-  transition: all .5s ease-in-out;
-  transform-origin: left center 0px;
-  transform-style: preserve-3d;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  -webkit-backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-}
-
-.book h2 {
-font-size: 24px;
-margin: 20px 0 10px;
-}
-
-.book p {
-font-size: 18px;
-line-height: 1.5;
-margin-bottom: 20px;
-}
-
-button {
-background-color: #4CAF50;
-border: none;
-color: white;
-padding: 10px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin-top: 10px;
-cursor: pointer;
-border-radius: 5px;
+  position: absolute;
+  opacity:0.7;
+  z-index: 0;
+  transform: translateY(-1000px);
 }
 
 @media (max-width: 780px) {
@@ -99,16 +141,29 @@ border-radius: 5px;
     overflow-y: scroll; 
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    display: block;
+    transform: translateX(-5px);
   }
+
   .grid-3 {
     grid-template-columns: 1fr;
   }
 
   .book-section div {
     padding: 1.2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .book {
-    width: 250px;
+  .book__info, .book__info-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sketchfab-embed-wrapper {
+    pointer-events: none;
   }
 }
