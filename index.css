@@ -12,7 +12,6 @@
     box-sizing: border-box;
     overscroll-behavior: none;
     scroll-behavior: smooth;
-
 }
 
 html {
@@ -37,7 +36,7 @@ body {
     -moz-animation-timing-function: linear;
     -o-animation-timing-function: linear;
     animation-timing-function: linear;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Exo:100);
