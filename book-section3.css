@@ -1,0 +1,30 @@
+.info {
+    position: relative;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+
+.info img {
+    max-width: 100%;
+}
+
+/* Portfolio */
+.portfolio {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+  
+.portfolio img {
+width: 100%;
+box-shadow: var(--shadow);
+}
+
+@media (max-width:780px) {
+    .info {
+        grid-template-columns: 1fr;
+      }
+}

@@ -12,6 +12,8 @@
     box-sizing: border-box;
     overscroll-behavior: none;
     scroll-behavior: smooth;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
 }
 
 html {
@@ -37,6 +39,23 @@ body {
     -o-animation-timing-function: linear;
     animation-timing-function: linear;
     overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Exo:100);
