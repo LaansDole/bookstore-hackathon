@@ -2,6 +2,8 @@
     --primary-color: rgba(13, 110, 139, 0.75);
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --light: #F5F5F5;
 }
 
 *, html {

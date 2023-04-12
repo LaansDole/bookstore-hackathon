@@ -8,12 +8,12 @@
     position: absolute;
     opacity:0.7;
     z-index: 0;
-    transform: translateY(-1200px);
+    transform: translateY(-200px);
 }
 
 @media (max-width: 780px) {
     .sketchfab-embed-wrapper {
         pointer-events: none;
         transform: translateY(3px);
-      }
+    }
 }

@@ -33,6 +33,7 @@ fill: #60A1AA;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    z-index: 1;
 }
 
 .custom-shape-divider-bottom-1681232129 h1 {
