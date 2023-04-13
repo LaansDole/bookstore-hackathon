@@ -10,12 +10,27 @@
     />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="menu.css" />
-    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="landing-cover.css" />
     <link rel="stylesheet" href="book-section.css" />
     <link rel="stylesheet" href="book-section2.css" />
-    <link rel="stylesheet" href="book-bg.css" />
+    <link rel="stylesheet" href="room-bg.css" />
     <link rel="stylesheet" href="divider.css" />
     <link rel="stylesheet" href="book-section3.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
+
+    <!-- Nav Bar icons -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/home.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/browse.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/phone.css"
+      rel="stylesheet"
+    />
 
     <title>Bookstore hackathon</title>
   </head>
@@ -29,23 +44,42 @@
           <div>
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Book Category</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
+    <ul class="nav">
+      <li>
+        <a href="#" target="_blank">
+          <i class="gg-home"></i>
+          <span class="title"><b>Home</b></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" target="_blank">
+          <i class="gg-browse"></i>
+          <div class="title"><b>Book Category</b></div>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" target="_blank">
+          <i class="gg-phone"></i>
+          <div class="title"><b>Contact Us</b></div>
+        </a>
+      </li>
+    </ul>
+
     <div class="landing">
       <div class="bg-layer"></div>
       <div class="content">
         <img src="book-logo1.jpeg" class="logo" alt="Traversy Media" />
         <div class="title"><b>Welcome to Aans's Bookstore</b></div>
-        <!-- <div class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, vel.
-        </div> -->
       </div>
     </div>
 
@@ -69,7 +103,8 @@
     <!-- Book Section 1 -->
 
     <div class="custom-shape-divider-top-1681211438">
-      <h1>BESTSELLING</h1>
+      <h1>Bestsellers</h1>
+      <!-- <img src="drag.png" alt="drag icon" /> -->
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +192,7 @@
           class="shape-fill"
         ></path>
       </svg>
-      <h1>TRENDING</h1>
+      <h1>Trending</h1>
       <svg
         class="up"
         data-name="Layer 1"
@@ -188,7 +223,7 @@
       </section>
       <!-- Book Section 2 Ends -->
       <!-- Book Section 3 -->
-      <!-- Info Section -->
+
       <section class="info">
         <img src="https://image.ibb.co/j4Qz8x/pic1.jpg" alt="" />
         <div>

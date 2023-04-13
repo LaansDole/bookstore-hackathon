@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.nav {
+	padding: 0px;
+	width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 999;
+    text-transform: uppercase;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width:780px) {
+    .nav {
+        display: none;
+    }
+}
+
+ul {
+	list-style-type: none;
+}
+li a {
+    padding: 20px;
+    width: fit-content;
+	float: left;
+	text-align: center;
+	font-size: 15px;
+	color: #364F6B;
+	text-decoration: none;
+    font-family: 'Roboto Slab', serif;;
+}
+
+li a .gg-home {
+    transform: scale(2) translateY(5px);
+    transition: transform .5s;
+    backface-visibility: hidden; /* Add this line */
+}
+
+li a .gg-browse {
+    transform: scale(2);
+    transition: transform .5s;
+    backface-visibility: hidden; /* Add this line */
+}
+li a .gg-phone {
+    transform: scale(2);
+    transition: transform .5s;
+    backface-visibility: hidden; /* Add this line */
+}
+
+li a .title {
+	font-size: 0px;
+}
+li a:hover .title {
+    padding-left: 40px;
+
+	font-size: 25px;
+	transition: .5s;
+}
+li a.title:hover {
+    padding-left: 40px;
+}

@@ -1,3 +1,4 @@
+@import url('https://fonts.google.com/specimen/Nova+Oval');
 :root {
     --primary-color: rgba(13, 110, 139, 0.75);
     --overlay-color: rgba(24, 39, 51 , 0.85);
@@ -21,7 +22,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Nova Oval', cursive;
     line-height: 1.4;
     text-align: center;
     /* img size is 50x50 */

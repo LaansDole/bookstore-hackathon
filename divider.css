@@ -24,7 +24,7 @@ fill: #60A1AA;
     position: relative;
     z-index: 1;
     color: #605567;
-    font-size: 2.5rem;
+    font-size: 3.3rem;
 }
 
 .custom-shape-divider-bottom-1681232129 {
@@ -40,7 +40,7 @@ fill: #60A1AA;
     position: inherit;
     z-index: 2;
     color: #605567;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .custom-shape-divider-bottom-1681232129 .down {
@@ -64,7 +64,7 @@ fill: #60A1AA;
 
 @media (max-width: 600px) {
     .custom-shape-divider-top-1681211438 h1 {
-        font-size: 2.2rem;
-        transform: rotate(180deg) translate(30px, -115px);
+        font-size: 2.6rem;
+        transform: rotate(180deg) translateY(-115px);
     }
 }
