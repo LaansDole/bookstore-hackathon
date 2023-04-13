@@ -14,7 +14,7 @@ transform: translateY(-25%);
 }
 
 /* Top Container */
-.top-container {
+.book-section2 {
 display: grid;
 grid-gap: 20px;
 grid-template-areas:
@@ -89,7 +89,7 @@ grid-area: top-box-b;
 
 /* Media Queries */
 @media (max-width: 780px) {
-    .top-container {
+    .book-section2 {
         grid-template-areas:
         'showcase showcase'
         'top-box-a top-box-b';
@@ -112,7 +112,7 @@ grid-area: top-box-b;
     }
 }
 @media (max-width: 500px) {
-    .top-container {
+    .book-section2 {
         grid-template-areas:
         'showcase'
         'top-box-a'

@@ -40,6 +40,7 @@ body {
     -o-animation-timing-function: linear;
     animation-timing-function: linear;
     overflow: hidden;
+    min-height: 100%;
 }
 
 *::-webkit-scrollbar {
@@ -59,46 +60,12 @@ body {
   -ms-overflow-style: none;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Exo:100);
-/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
-/* Animations */
-/* @-webkit-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
+footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: red;
 }
-@-moz-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@-o-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@-webkit-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
-@-moz-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
-@-o-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
-@keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-} */
