@@ -5,6 +5,9 @@
     --menu-speed: 0.75s;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     --light: #F5F5F5;
+    --dash: 5px solid white;
+    --raleway: 'Raleway', sans-serif;
+    --roboto: 'Roboto Slab', serif;
 }
 
 *, html {
@@ -65,7 +68,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 10vh;
   text-align: center;
-  background-color: red;
+  background-color: #F5F5F5;
 }

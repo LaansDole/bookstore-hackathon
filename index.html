@@ -17,14 +17,16 @@
     <link rel="stylesheet" href="divider.css" />
     <link rel="stylesheet" href="book-section3.css" />
     <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="button-style.css" />
+    <link rel="stylesheet" href="back-to-top.css" />
 
     <!-- Nav Bar icons -->
     <link
-      href="https://unpkg.com/css.gg@2.0.0/icons/css/home.css"
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css"
       rel="stylesheet"
     />
     <link
-      href="https://unpkg.com/css.gg@2.0.0/icons/css/browse.css"
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/feed.css"
       rel="stylesheet"
     />
     <link
@@ -35,6 +37,12 @@
     <title>Bookstore hackathon</title>
   </head>
   <body>
+    <div class="back-to-top">
+      <a href="#landing" class="back-to-top">
+        <img src="back-to-top.gif" alt="back-to-top" width="75" />
+      </a>
+    </div>
+
     <div class="menu-wrap">
       <p><b>MENU</b></p>
       <input type="checkbox" class="toggler" />
@@ -55,14 +63,14 @@
     <ul class="nav">
       <li>
         <a href="#" target="_blank">
-          <i class="gg-home"></i>
+          <i class="gg-home-alt"></i>
           <span class="title"><b>Home</b></span>
         </a>
       </li>
 
       <li>
         <a href="#" target="_blank">
-          <i class="gg-browse"></i>
+          <i class="gg-feed"></i>
           <div class="title"><b>Book Category</b></div>
         </a>
       </li>
@@ -75,11 +83,12 @@
       </li>
     </ul>
 
-    <div class="landing">
+    <div class="landing" id="landing">
       <div class="bg-layer"></div>
       <div class="content">
         <img src="book-logo1.jpeg" class="logo" alt="Traversy Media" />
-        <div class="title"><b>Welcome to Aans's Bookstore</b></div>
+        <div class="title"><b>Welcome to Aans</b></div>
+        <div class="title bookstore"><b>Book Store</b></div>
       </div>
     </div>
 
@@ -101,10 +110,14 @@
     </div>
 
     <!-- Book Section 1 -->
-
-    <div class="custom-shape-divider-top-1681211438">
-      <h1>Bestsellers</h1>
-      <!-- <img src="drag.png" alt="drag icon" /> -->
+    <div class="custom-shape-divider-top-1681408915">
+      <div class="divider-title">
+        <h1>Bestsellers</h1>
+        <h3>Most popular picks</h3>
+        <a href="#" class="button">
+          <span>View All</span>
+        </a>
+      </div>
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -179,22 +192,8 @@
 
     <!-- Book Section 2 -->
 
-    <div class="custom-shape-divider-bottom-1681232129">
+    <div class="custom-shape-divider-top-1681413541">
       <svg
-        class="down"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-      <h1>Trending</h1>
-      <svg
-        class="up"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1200 120"

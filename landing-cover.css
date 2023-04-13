@@ -56,14 +56,21 @@ transition: all 700ms;
 }
 
 .content .logo {
-height: 250px;
-width: 250px;
+height: 220px;
+width: 220px;
 }
 
 .content .title {
-font-size: 2.5rem;
+font-size: 2.6rem;
 margin-top: 1rem;
 color: #F5F5F5;
+}
+
+.content .title ~ .bookstore {
+  border-bottom: 4px solid;
+  padding-bottom: 7px;
+  width: fit-content;
+  margin: 0 auto;
 }
 
   /* Small Screens */
@@ -83,12 +90,12 @@ color: #F5F5F5;
     }
   
     .content .logo {
-      height: 100px;
-      width: 100px;
+      height: 120px;
+      width: 120px;
     }
 
     .content .title {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
     }
   
     /* .content .text {

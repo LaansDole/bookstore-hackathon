@@ -2,7 +2,7 @@
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
-    padding: 4rem 1rem;
+    padding: 0 1rem 4rem 1rem;
     display: flex;
 	  flex-wrap: wrap;
 	  justify-content: space-between;
@@ -78,7 +78,8 @@ z-index: 2;
 /* background-color: #fff; */
 border-bottom-left-radius: 12px;
 border-bottom-right-radius: 12px;
- padding: 16px 24px 24px 24px;
+padding: 16px 24px 24px 24px;
+background-color: black;
 }
 
 .book__category {
