@@ -8,10 +8,17 @@
   z-index: 99;
 }
 
+@media (min-width:781px) {
+  .menu-wrap {
+    display: none;
+  }
+}
+
 .menu-wrap p {
   color: white;
   position: fixed;
   margin: 50px 10px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .menu-wrap .toggler {
@@ -137,13 +144,18 @@
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
-  font-size: 2.5rem;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
+  font-size: 3rem;
+
 }
 

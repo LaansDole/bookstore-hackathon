@@ -1,0 +1,17 @@
+/* More books */
+.more-books {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+  
+.more-books img {
+width: 100%;
+box-shadow: var(--shadow);
+}
+
+@media (max-width:780px) {
+    .book-section3 {
+        grid-template-columns: 1fr;
+      }
+}

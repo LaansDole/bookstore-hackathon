@@ -10,14 +10,39 @@
     />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="menu.css" />
-    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="landing-cover.css" />
     <link rel="stylesheet" href="book-section.css" />
-    <link rel="stylesheet" href="book-bg.css" />
+    <link rel="stylesheet" href="book-section2.css" />
+    <link rel="stylesheet" href="room-bg.css" />
     <link rel="stylesheet" href="divider.css" />
+    <link rel="stylesheet" href="book-section3.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="button-style.css" />
+    <link rel="stylesheet" href="back-to-top.css" />
+
+    <!-- Nav Bar icons -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/feed.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/phone.css"
+      rel="stylesheet"
+    />
 
     <title>Bookstore hackathon</title>
   </head>
   <body>
+    <div class="back-to-top">
+      <a href="#landing" class="back-to-top">
+        <img src="back-to-top.gif" alt="back-to-top" width="75" />
+      </a>
+    </div>
+
     <div class="menu-wrap">
       <p><b>MENU</b></p>
       <input type="checkbox" class="toggler" />
@@ -27,47 +52,72 @@
           <div>
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Book Category</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="landing">
+    <ul class="nav">
+      <li>
+        <a href="#" target="_blank">
+          <i class="gg-home-alt"></i>
+          <span class="title"><b>Home</b></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" target="_blank">
+          <i class="gg-feed"></i>
+          <div class="title"><b>Book Category</b></div>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" target="_blank">
+          <i class="gg-phone"></i>
+          <div class="title"><b>Contact Us</b></div>
+        </a>
+      </li>
+    </ul>
+
+    <div class="landing" id="landing">
       <div class="bg-layer"></div>
       <div class="content">
         <img src="book-logo1.jpeg" class="logo" alt="Traversy Media" />
-        <div class="title">Welcome to Laans's Bookstore</div>
-        <!-- <div class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, vel.
-        </div> -->
+        <div class="title"><b>Welcome to Aans</b></div>
+        <div class="title bookstore"><b>Book Store</b></div>
       </div>
     </div>
 
     <div class="sketchfab-embed-wrapper">
       <iframe
-        title="Book Cover"
+        title="Bookstore Cover"
         frameborder="0"
-        allowfullscreen="false"
-        mozallowfullscreen="false"
-        webkitallowfullscreen="false"
+        allowfullscreen="true"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
         allow="autoplay; xr-spatial-tracking"
         xr-spatial-tracking
         execution-while-out-of-viewport
         execution-while-not-rendered
         web-share
-        width="2560"
-        height="2560"
-        src="https://sketchfab.com/models/c370f7e06e3c4b55ac35cf48008c77ff/embed?autostart=1&scrollwheel=0&camera=0&ui_stop=0&autospin=0.02"
+        src="https://sketchfab.com/models/c370f7e06e3c4b55ac35cf48008c77ff/embed?autostart=1&scrollwheel=0&camera=0&ui_stop=0&autospin=0.007"
       >
       </iframe>
     </div>
 
-    <div class="custom-shape-divider-top-1681211438">
-      <h1>BESTSELLING</h1>
+    <!-- Book Section 1 -->
+    <div class="custom-shape-divider-top-1681408915">
+      <div class="divider-title">
+        <h1>Bestsellers</h1>
+        <h3>Most popular picks</h3>
+        <a href="#" class="button">
+          <span>View All</span>
+        </a>
+      </div>
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -138,23 +188,12 @@
         </article>
       </div>
     </section>
+    <!-- Book Section 1 Ends -->
 
-    <div class="custom-shape-divider-bottom-1681232129">
+    <!-- Book Section 2 -->
+
+    <div class="custom-shape-divider-top-1681413541">
       <svg
-        class="down"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-      <h1>TRENDING</h1>
-      <svg
-        class="up"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1200 120"
@@ -166,5 +205,41 @@
         ></path>
       </svg>
     </div>
+
+    <div class="wrapper">
+      <section class="book-section2">
+        <div class="showcase">
+          <span></span>
+        </div>
+        <div class="top-box top-box-a">
+          <h4>Membership</h4>
+          <p class="price">$199/mo</p>
+        </div>
+        <div class="top-box top-box-b">
+          <h4>Pro Membership</h4>
+          <p class="price">$299/mo</p>
+        </div>
+      </section>
+      <!-- Book Section 2 Ends -->
+      <!-- Book Section 3 -->
+
+      <section class="book-section3">
+        <img src="https://image.ibb.co/j4Qz8x/pic1.jpg" alt="" />
+        <div>
+          <h2>Other Book Category</h2>
+        </div>
+      </section>
+
+      <section class="more-books">
+        <img src="https://source.unsplash.com/random/200x200" alt="" />
+        <img src="https://source.unsplash.com/random/201x200" alt="" />
+        <img src="https://source.unsplash.com/random/202x200" alt="" />
+        <img src="https://source.unsplash.com/random/203x200" alt="" />
+      </section>
+    </div>
   </body>
+  <footer>
+    This will always appear at the bottom of the page, but
+    <strong>not fixed</strong>.
+  </footer>
 </html>
