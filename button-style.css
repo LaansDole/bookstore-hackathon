@@ -8,7 +8,7 @@ font-family: Avenir, sans-serif;
 position: relative;
 margin: auto;
 transition: all .2s ease;
-padding: 19px 25px;
+padding-top: 19px;
 }
 .button:before {
     content: "";
@@ -18,15 +18,15 @@ padding: 19px 25px;
     display: block;
     border-radius: 28px;
     background: #605567;
-    width: 56px;
+    width: 50px;
     height: 56px;
     transition: all .3s ease; 
 }
 /* Change the span class name accordingly */
 .button span {
     position: relative;
-    font-size: 0.8rem; 
 /*     Change the font size */
+    font-size: 0.8rem; 
     line-height: 18px;
     
     font-weight: 900;
@@ -34,8 +34,15 @@ padding: 19px 25px;
     text-transform: uppercase;
     vertical-align: middle; 
 }
+
+@media (max-width: 500px) {
+    .button span {
+        font-size: 0.7rem;
+    }
+    
+}
 .button:hover:before {
-    width: 85%;
+    width: 75%;
     background: #605567; 
 }
 .button:active {

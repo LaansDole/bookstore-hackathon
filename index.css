@@ -1,11 +1,11 @@
 @import url('https://fonts.google.com/specimen/Nova+Oval');
 :root {
-    --primary-color: rgba(13, 110, 139, 0.75);
+    --primary-color: #605567;
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     --light: #F5F5F5;
-    --dash: 5px solid white;
+    --dash: 5px solid #605567;
     --raleway: 'Raleway', sans-serif;
     --roboto: 'Roboto Slab', serif;
 }
@@ -68,7 +68,8 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 10vh;
+  padding-bottom: 27vh;
+  margin-top: 200px;
   text-align: center;
   background-color: #F5F5F5;
 }

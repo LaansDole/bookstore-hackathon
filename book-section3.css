@@ -3,6 +3,8 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    margin-bottom: -400px;
+    position: relative;
 }
   
 .more-books img {
@@ -13,5 +15,5 @@ box-shadow: var(--shadow);
 @media (max-width:780px) {
     .book-section3 {
         grid-template-columns: 1fr;
-      }
+    }
 }
