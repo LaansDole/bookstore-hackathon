@@ -1,8 +1,22 @@
+.book-section3 img {
+    max-width: 100%;
+    border-radius: 25%;
+}
+
+.book-section3 div {
+    padding-left: 150px;
+    position: absolute;
+    font-size: 2rem;
+    margin: 90px;
+    color: #F5F5F5;
+}
 /* More books */
 .more-books {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    margin-bottom: -250px;
+    position: relative;
 }
   
 .more-books img {
@@ -13,5 +27,5 @@ box-shadow: var(--shadow);
 @media (max-width:780px) {
     .book-section3 {
         grid-template-columns: 1fr;
-      }
+    }
 }

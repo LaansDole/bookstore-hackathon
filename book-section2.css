@@ -11,6 +11,7 @@ grid-gap: 20px;
 margin: 50px 50px 0 50px;
 color: #F5F5F5;
 transform: translateY(-25%);
+padding-top: 200px;
 }
 
 /* Top Container */
@@ -110,8 +111,9 @@ grid-area: top-box-b;
     .main-nav ul {
         grid-template-columns: 1fr;
     }
+
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .book-section2 {
         grid-template-areas:
         'showcase'
@@ -121,10 +123,9 @@ grid-area: top-box-b;
 
     .showcase span {
       width: 120px;
-      background-size: 40%;
+      background-size: 50%;
     }
-
-    .wrapper {
-      transform: translateY(-17%);
+    .book-section2 {
+      padding-top: 75px;
     }
 }

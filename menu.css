@@ -3,9 +3,9 @@
 .menu-wrap {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 100px;
   margin: 0 auto;
-  z-index: 99;
+  z-index: 999;
 }
 
 @media (min-width:781px) {
@@ -15,10 +15,11 @@
 }
 
 .menu-wrap p {
-  color: white;
+  color: whitesmoke;
   position: fixed;
-  margin: 50px 10px;
+  margin: 75px 20px;
   font-family: 'Roboto Slab', serif;
+  z-index: 100;
 }
 
 .menu-wrap .toggler {
@@ -36,13 +37,16 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 99;
   width: 60px;
   height: 60px;
   padding: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  z-index: 99;
+  margin: 15px;
 }
 
 /* Hamburger Line */
@@ -156,6 +160,5 @@
   text-decoration: none;
   transition: color 0.4s ease;
   font-size: 3rem;
-
 }
 
