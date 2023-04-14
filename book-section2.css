@@ -22,7 +22,6 @@ grid-template-areas:
     'showcase showcase top-box-a'
     'showcase showcase top-box-b';
 padding-bottom: 20px;
-/* padding-top: 300px; */
 }
 
 /* Showcase */
@@ -127,6 +126,6 @@ grid-area: top-box-b;
       background-size: 50%;
     }
     .book-section2 {
-      padding-top: 300px;
+      padding-top: 75px;
     }
 }

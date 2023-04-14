@@ -1,3 +1,15 @@
+.book-section3 img {
+    max-width: 100%;
+    border-radius: 25%;
+}
+
+.book-section3 div {
+    padding-left: 150px;
+    position: absolute;
+    font-size: 2rem;
+    margin: 90px;
+    color: #F5F5F5;
+}
 /* More books */
 .more-books {
     display: grid;

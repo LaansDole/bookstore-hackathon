@@ -50,11 +50,16 @@
     border-bottom-width: 12px;
 }
 
+.custom-shape-divider-top-1681408915 .divider-title h3,h4 {
+    font-family: var(--dancingScript);
+    font-size: 1.9rem;
+    font-style: italic;
+    float: right;
+}
+
+
 .custom-shape-divider-top-1681408915 .divider-title h3 {
     transform: rotate(180deg) translateY(-155px) translateX(-150px);
-    font-size: 1.6rem;
-    float: right;
-    font-style: italic;
 }
 
 .custom-shape-divider-top-1681408915 .divider-title a {
@@ -63,6 +68,7 @@
     color: #F5F5F5;
     padding-right: 40px;
     text-decoration: none;
+    font-style: var(--avenir);
 }
 
 @media (max-width:500px) {
@@ -78,7 +84,7 @@
 
     .custom-shape-divider-top-1681408915 .divider-title h3 {
         transform: rotate(180deg) translateY(-160px) translateX(-150px);
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         float: right;
         font-style: italic;
     }
@@ -98,9 +104,6 @@
 /* Divider section 2 */
 .custom-shape-divider-top-1681408915 .divider-title h4 {
     transform: rotate(180deg) translateY(-155px) translateX(-190px);
-    font-size: 1.6rem;
-    float: right;
-    font-style: italic;
 }
 /* Divider section 3 */
 .book-section3 {
@@ -114,18 +117,4 @@
     background-color: black;
     width: fit-content;
     z-index: 101;
-}
-
-.book-section3 img {
-    max-width: 100%;
-    border-radius: 25%;
-}
-
-.book-section3 div {
-    padding-left: 150px;
-    position: absolute;
-    font-size: 2rem;
-    display: block;
-    margin: 90px;
-    color: #F5F5F5;
 }
