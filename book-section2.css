@@ -21,13 +21,13 @@ grid-gap: 20px;
 grid-template-areas:
     'showcase showcase top-box-a'
     'showcase showcase top-box-b';
-padding-bottom: 20px;
+padding: 20px;
 }
 
 /* Showcase */
 .showcase {
 grid-area: showcase;
-min-height: 400px; /* set the height of the header */
+min-height: 400px; 
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -63,32 +63,88 @@ position: relative;
   }   
 }
   
-
-/* .showcase p {
+.showcase p {
 font-size: 1.3rem;
 margin-top: 0;
-color: var(--light);
-} */
+}
 
 /* Top Box */
 .top-box {
-box-shadow: var(--shadow);
 padding: 1.5rem;
-}
-
-.top-box .price {
-font-size: 2.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .top-box-a {
 grid-area: top-box-a;
 background-color: aqua;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+border: 2px solid #000;
+border-radius: 10px;
+margin: 0 auto;
 }
 
 .top-box-b {
 grid-area: top-box-b;
 background-color: aqua;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+border: 2px solid #000;
+border-radius: 10px;
+margin: 0 auto;
 }
+
+.book-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.book-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.book-info {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.book-info h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.book-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 
 /* Media Queries */
 @media (max-width: 780px) {
@@ -109,11 +165,6 @@ background-color: aqua;
         width: 200px;
         background-size: 30%;
     }
-
-    .main-nav ul {
-        grid-template-columns: 1fr;
-    }
-
 }
 @media (max-width: 550px) {
     .book-section2 {
@@ -128,6 +179,6 @@ background-color: aqua;
       background-size: 50%;
     }
     .book-section2 {
-      padding-top: 75px;
+      padding-top: 80%;
     }
 }
