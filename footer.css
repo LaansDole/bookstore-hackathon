@@ -1,4 +1,4 @@
-footer {
+home-footer {
     position: relative;
     bottom: 0;
     left: 0;
@@ -6,6 +6,15 @@ footer {
     background-color: #FFFFFF;
     padding: 50px 0 30px 0;
     margin-top: -400px;
+}
+
+.contact-us-footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 50px 0 30px 0;
 }
 
 footer p {
@@ -100,7 +109,7 @@ margin-right: 0;
         transform: scale(2.5) translateX(0);
     }
 
-    footer {
+    home-footer {
         margin-top: -150%;
     }
 }
