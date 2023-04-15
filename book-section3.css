@@ -1,31 +1,80 @@
 .book-section3 img {
-    max-width: 100%;
+    max-width: 70%;
     border-radius: 25%;
 }
 
-.book-section3 div {
-    padding-left: 150px;
-    position: absolute;
+.book-section3 .section3-title {
+    position: relative;
     font-size: 2rem;
-    margin: 90px;
     color: #F5F5F5;
+    /* background-color: red; */
+}
+
+.book-section3 .view-all {
+    position: relative;
+    margin: 0 auto;
+}
+
+.book-section3 {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;    
 }
 /* More books */
 .more-books {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    margin-bottom: -250px;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     position: relative;
+    max-width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.more-books .more-audio-books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-books p {
+    position: absolute;
+    color: var(--primary-color);
+    font-size: 5rem;
+    z-index: 999;
+}
+
+.more-books .inner-disc {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
   
-.more-books img {
-width: 100%;
+.more-books .more-audio-books img {
+max-width: 100%;
 box-shadow: var(--shadow);
+border-radius: 50%;
+min-height: 295px;
 }
 
 @media (max-width:780px) {
     .book-section3 {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:500px) {
+    .book-section3 img {
+        max-width: 130%;
+        border-radius: 25%;
     }
 }

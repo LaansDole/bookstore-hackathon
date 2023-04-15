@@ -22,6 +22,7 @@ grid-template-areas:
     'showcase showcase top-box-a'
     'showcase showcase top-box-b';
 padding: 20px;
+margin-top: 30%;
 }
 
 /* Showcase */
@@ -71,35 +72,25 @@ margin-top: 0;
 /* Top Box */
 .top-box {
 padding: 1.5rem;
+background-color: black;
+
 display: flex;
-justify-content: center;
+flex-direction: row;
+justify-content: space-between;
 align-items: center;
+padding: 20px;
+border: 2px solid #F5F5F5;
+border-radius: 10px;
+margin: 0 auto;
 }
 
 .top-box-a {
 grid-area: top-box-a;
-background-color: aqua;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 20px;
-border: 2px solid #000;
-border-radius: 10px;
-margin: 0 auto;
+
 }
 
 .top-box-b {
 grid-area: top-box-b;
-background-color: aqua;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 20px;
-border: 2px solid #000;
-border-radius: 10px;
-margin: 0 auto;
 }
 
 .book-image {
@@ -130,21 +121,10 @@ margin: 0 auto;
   margin: 10px 0;
 }
 
-button {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.book-info .add-to-cart {
+  padding-top: 50px;
+  height: 100px;
 }
-
-button:hover {
-  background-color: #fff;
-  color: #000;
-}
-
 
 /* Media Queries */
 @media (max-width: 780px) {
@@ -165,6 +145,10 @@ button:hover {
         width: 200px;
         background-size: 30%;
     }
+
+    .book-section2 {
+      padding-top: 30%;
+    }
 }
 @media (max-width: 550px) {
     .book-section2 {
@@ -179,6 +163,6 @@ button:hover {
       background-size: 50%;
     }
     .book-section2 {
-      padding-top: 80%;
+      padding-top: 200%;
     }
 }

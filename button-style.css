@@ -1,3 +1,11 @@
+/* 
+<a href="#" class="button">
+    <span>View All</span>
+</a> 
+
+Copy above snippet
+    */
+
 a {
 text-decoration: none;
 color: inherit; 
@@ -41,7 +49,7 @@ padding-top: 19px;
     
 }
 .button:hover:before {
-    width: 75%;
+    width: 125%;
     background: #605567; 
 }
 .button:active {
