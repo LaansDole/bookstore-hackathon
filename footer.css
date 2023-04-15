@@ -74,8 +74,8 @@ margin-right: 0;
     align-items: center;
     flex-direction: column;
     padding: 20px 0;
-    border-top: 20px solid var(--primary-color);
-    border-bottom: 20px solid var(--primary-color);
+    border-top: 17px solid var(--primary-color);
+    border-bottom: 17px solid var(--primary-color);
 }
 .footer-social p{
     transform: translateX(-17px);

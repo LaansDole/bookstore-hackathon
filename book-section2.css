@@ -82,10 +82,12 @@ font-size: 2.5rem;
 
 .top-box-a {
 grid-area: top-box-a;
+background-color: aqua;
 }
 
 .top-box-b {
 grid-area: top-box-b;
+background-color: aqua;
 }
 
 /* Media Queries */
