@@ -1,14 +1,15 @@
 .container {
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 1rem 4rem 1rem;
-    display: flex;
-	  flex-wrap: wrap;
-	  justify-content: space-between;
-    /* transform: translateX(50px); */
-    color: #F5F5F5;
-
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 1rem 4rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* transform: translateX(50px); */
+  color: #F5F5F5;
+  z-index: 3;
 }
 
 .grid-3 {
@@ -20,6 +21,19 @@
 .center {
     text-align: center;
     margin: auto;
+}
+
+/* Change book background image */
+.book--1 .book__img, .book--1 .book__img--hover {
+  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.book--1 .book__img, .book--1 .book__img--hover {
+  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.book--1 .book__img, .book--1 .book__img--hover {
+  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
 
 .book--1 .book__img, .book--1 .book__img--hover {
@@ -63,13 +77,17 @@ transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
 position: relative;
 border-radius: 12px;
 overflow: hidden;
-box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+/* box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1); */
 }
 
-.book:hover {
-box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
-  transform: scale(1.10, 1.10);
+.book:hover, .book__info:hover {
+/* box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1); */
+  transform: scale(1, 1);
   background-color: #fff;
+}
+
+.book__info:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .book__info {
@@ -87,7 +105,7 @@ background-color: black;
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 500;
-color: #868686;
+color: #F5F5F5;
 }
 
 .book__title {
@@ -105,7 +123,7 @@ color: #868686;
 .book__author {
   font-weight: 600;
   text-decoration: none;
-  color: #AD7D52;
+  color: #F5F5F5;
 }
 
 .book:hover .book__img--hover {
@@ -113,7 +131,9 @@ color: #868686;
   opacity: 0.3;
 }
 
-.book:hover .book__info {
+.book:hover .book__info,
+.book:hover .book__author,
+.book:hover .book__category {
   background-color: transparent;
   color: black;
   position: relative;

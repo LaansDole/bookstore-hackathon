@@ -21,7 +21,7 @@ padding-top: 19px;
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: -7px;
     display: block;
     border-radius: 28px;
     background: #605567;
@@ -52,6 +52,13 @@ padding-top: 19px;
     width: 125%;
     background: #605567; 
 }
+
+.add-to-cart .button:hover:before {
+    width: 155%;
+    background: #605567; 
+    height: 120%;
+}
+
 .button:active {
     transform: scale(0.96); 
 }
