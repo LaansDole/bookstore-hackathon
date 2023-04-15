@@ -4,7 +4,6 @@
 }
 
 .book-section3 div {
-    padding-left: 150px;
     position: absolute;
     font-size: 2rem;
     margin: 90px;
@@ -14,14 +13,36 @@
 .more-books {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    margin-bottom: -250px;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     position: relative;
+    max-width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.more-books .more-audio-books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-books .inner-disc {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
   
-.more-books img {
-width: 100%;
+.more-books .more-audio-books img {
+max-width: 100%;
 box-shadow: var(--shadow);
+border-radius: 50%;
+min-height: 295px;
 }
 
 @media (max-width:780px) {
