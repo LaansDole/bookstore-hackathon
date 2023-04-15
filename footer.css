@@ -23,6 +23,7 @@ padding: 0;
 display: flex;
 justify-content: space-around;
 align-items: center;
+text-transform: uppercase;
 }
 
 .footer-nav li {
@@ -73,9 +74,14 @@ margin-right: 0;
     align-items: center;
     flex-direction: column;
     padding: 20px 0;
+    border-top: 17px solid var(--primary-color);
+    border-bottom: 17px solid var(--primary-color);
+}
+.footer-social p{
+    transform: translateX(-17px);
 }
 .footer-social i {
-    transform: scale(2.5);
+    transform: scale(2.5) translateX(-6px);
     padding: 0 20px;
 }
 
@@ -84,5 +90,13 @@ margin-right: 0;
         flex-direction: column;
         position: relative;
         align-items: flex-start;
+    }
+
+    .footer-social p{
+        transform: translateX(0);
+    }
+
+    .footer-social i {
+        transform: scale(2.5) translateX(0);
     }
 }
