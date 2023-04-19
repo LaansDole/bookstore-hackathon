@@ -52,7 +52,7 @@
   animation: animate 25s ease-in-out infinite;
   /* background-color: aqua; */
   height: 100px;
-  margin: 0 auto;
+  margin: 0;
   width: 120px;
   z-index: 1;
 }
