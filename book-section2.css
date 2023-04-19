@@ -56,6 +56,7 @@ position: relative;
     height: 100px;
     margin: 0 auto;
     width: 120px;
+    z-index: 1;
 }
   
 @keyframes animate {
@@ -73,9 +74,18 @@ position: relative;
   }   
 }
   
-.showcase p {
+.showcase .showcase-book-info {
 font-size: 1.3rem;
-margin-top: 0;
+display: grid;
+gap: 50px;
+}
+
+.showcase .showcase-add-to-cart {
+  padding-top: 50px;
+  position: relative;
+  z-index: 0;
+  height: 20px;
+  margin-bottom: 50px;
 }
 
 /* Top Box */
