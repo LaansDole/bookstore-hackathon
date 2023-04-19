@@ -2,6 +2,7 @@
 @import url('https://fonts.google.com/specimen/Nova+Oval');
 :root {
     --primary-color: #605567;
+    --secondary-color: #f46f80;
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
