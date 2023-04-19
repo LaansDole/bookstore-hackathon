@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato');
+@import url('https://fonts.google.com/specimen/Nova+Oval');
+:root {
+    --primary-color: #605567;
+    --overlay-color: rgba(24, 39, 51 , 0.85);
+    --menu-speed: 0.75s;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --light: #F5F5F5;
+    --dash: 5px solid #605567;
+    --raleway: 'Raleway', sans-serif;
+    --roboto: 'Roboto Slab', serif;
+    --dancingScript: 'Dancing Script', cursive;
+    --avenir: 'Avenir', sans-serif;;
+}
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Nova Oval', cursive;
+  line-height: 1.4;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  overflow: hidden;
+  min-height: 10%;
+  flex-flow: column nowrap;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
