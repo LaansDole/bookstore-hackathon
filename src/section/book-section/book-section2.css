@@ -46,7 +46,7 @@
 
 .showcase span {
   transform: scale(4);
-  background-image: url("public/assets/book-placeholder.jpeg");
+  background-image: url("../../../public/assets/book-placeholder.jpeg");
   background-repeat: no-repeat;
   background-size: 40%;
   animation: animate 25s ease-in-out infinite;
