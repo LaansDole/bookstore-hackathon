@@ -9,6 +9,7 @@
       border-radius: 5px;
       /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
       counter-reset: flag; 
+      transform: scale(1.25);
   }
   
   .breadcrumb a {
@@ -16,12 +17,11 @@
       outline: none;
       display: block;
       float: left;
-      font-size: 12px;
+      font-size: 1rem;
       line-height: 36px;
       color: white;
       /*need more margin on the left of links to accomodate the numbers*/
       padding: 0 10px 0 60px;
-      background: #666;
       background: linear-gradient(#666, #333);
       position: relative;
   }
@@ -40,11 +40,9 @@
   
   /*hover/active styles*/
   .breadcrumb a.active, .breadcrumb a:hover{
-      background: #333;
       background: linear-gradient(#333, #000);
   }
   .breadcrumb a.active:after, .breadcrumb a:hover:after {
-      background: #333;
       background: linear-gradient(135deg, #333, #000);
   }
   
@@ -64,7 +62,6 @@
       /*we need to prevent the arrows from getting buried under the next link*/
       z-index: 1;
       /*background same as links but the gradient will be rotated to compensate with the transform applied*/
-      background: #666;
       background: linear-gradient(135deg, #666, #333);
       /*stylish arrow design using box shadow*/
       box-shadow: 
@@ -92,14 +89,6 @@
       position: absolute;
       top: 0;
       left: 30px;
-      background: #444;
-      background: linear-gradient(#444, #222);
+      background: var(--primary-color);
       font-weight: bold;
   }
-  
-  
-  
-  
-  
-  
-  
