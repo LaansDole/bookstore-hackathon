@@ -4,11 +4,11 @@
     left: 0;
     width: 100%;
     background-color: #FFFFFF;
-    padding: 50px 0 30px 0;
+    padding-bottom: 30px;
     margin-top: -400px;
 }
 
-.contact-us-footer {
+.general-footer {
     position: relative;
     bottom: 0;
     left: 0;
