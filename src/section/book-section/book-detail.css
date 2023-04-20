@@ -9,7 +9,7 @@
     opacity: 0.9;
     padding-bottom: 25%;
     padding-top: 26%;
-    margin: 10% auto;
+    margin: 0;
     font-family: var(--roboto);
     z-index: 4;
 }
@@ -144,10 +144,12 @@
         grid-gap: 1.5rem;
     }
     .card-wrapper{
-        height: 100vh;
+        height: 97.8vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 30%;
+        transform: translateY(-25%);
     }
     .product-imgs{
         display: flex;
@@ -162,7 +164,8 @@
 @media screen and (max-width:1000px) {
     .card-wrapper {
         padding: 0;
-        margin-bottom: 20%;
+        margin-top: 40%;
+        transform: translateY(-12%);
     }
     .product-title {
         transform: translateX(0);
