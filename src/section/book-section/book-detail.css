@@ -3,6 +3,15 @@
     margin: 0 auto;
     position: relative;
     line-height: 1.5;
+    color: white;
+    background-color: black;
+    text-align: center;
+    opacity: 0.9;
+    padding-bottom: 25%;
+    padding-top: 26%;
+    margin: 10% auto;
+    font-family: var(--roboto);
+    z-index: 4;
 }
 .img-display{
     overflow: hidden;
@@ -37,12 +46,13 @@
     padding: 2rem 1rem;
 }
 .product-title{
+    transform: translateX(-11px);
     font-size: 3rem;
     text-transform: capitalize;
     font-weight: 700;
     position: relative;
-    color: #12263a;
     margin: 1rem 0;
+    background-color: var(--primary-color);
 }
 .product-title::after{
     content: "";
@@ -51,63 +61,45 @@
     bottom: 0;
     height: 4px;
     width: 80px;
-    background: #12263a;
-}
-.product-link{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 0.9rem;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    background: #256eff;
-    color: #fff;
-    padding: 0 0.3rem;
-    transition: all 0.5s ease;
-}
-.product-link:hover{
-    opacity: 0.9;
+    background: var(--secondary-color);
 }
 .product-rating{
     color: #ffc107;
 }
 .product-rating span{
     font-weight: 600;
-    color: #252525;
+    color: white;
 }
 .product-price{
     margin: 1rem 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 .product-price span{
     font-weight: 400;
 }
-.last-price span{
-    color: #f64749;
-    text-decoration: line-through;
-}
 .new-price span{
-    color: #256eff;
+    color: var(--secondary-color);
 }
 .product-detail h2{
     text-transform: capitalize;
-    color: #12263a;
+    color: white;
     padding-bottom: 0.6rem;
+    font-size: 2rem;
 }
 .product-detail p{
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     padding: 0.3rem;
     opacity: 0.8;
 }
 .product-detail ul{
     margin: 1rem 0;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
 }
 .product-detail ul li{
     margin: 0;
     list-style: none;
-    background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png) left center no-repeat;
+    background: url('../../../public/assets/checked.png') left center no-repeat;
     background-size: 18px;
     padding-left: 1.7rem;
     margin: 0.4rem 0;
@@ -129,6 +121,8 @@
     outline: 0;
     margin-right: 0.2rem;
     margin-bottom: 1rem;
+    position: relative;
+    z-index: 4;
 }
 .purchase-info input{
     width: 60px;
@@ -137,39 +131,12 @@
     cursor: pointer;
     color: #fff;
 }
-.purchase-info .btn:first-of-type{
-    background: #256eff;
-}
 .purchase-info .btn:last-of-type{
-    background: #f64749;
+    background: var(--secondary-color);
 }
 .purchase-info .btn:hover{
     opacity: 0.9;
 }
-.social-links{
-    display: flex;
-    align-items: center;
-}
-.social-links a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    color: #000;
-    border: 1px solid #000;
-    margin: 0 0.2rem;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 0.8rem;
-    transition: all 0.5s ease;
-}
-.social-links a:hover{
-    background: #000;
-    border-color: transparent;
-    color: #fff;
-}
-
 @media screen and (min-width: 992px){
     .card{
         display: grid;
@@ -189,5 +156,12 @@
     }
     .product-content{
         padding-top: 0;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .card-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
