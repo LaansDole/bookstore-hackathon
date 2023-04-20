@@ -161,7 +161,11 @@
 
 @media screen and (max-width:1000px) {
     .card-wrapper {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 0;
+        margin-bottom: 20%;
+    }
+    .product-title {
+        transform: translateX(0);
+        background-color: black;
     }
 }
