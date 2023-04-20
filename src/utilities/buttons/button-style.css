@@ -43,18 +43,14 @@ font-family: var(--inconsolata);
     letter-spacing: .25em;
     text-transform: uppercase;
     vertical-align: middle; 
-}
 
-.button span {
-    position: relative;
-/*     Change the font size */
-    font-size: 0.8rem; 
-    line-height: 18px;
-    
-    font-weight: 900;
-    letter-spacing: .25em;
-    text-transform: uppercase;
-    vertical-align: middle; 
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    height: 100%;
 }
 
 .button:hover:before {
@@ -63,9 +59,9 @@ font-family: var(--inconsolata);
 }
 
 .add-to-cart .button:hover:before {
-    width: 155%;
+    width: 130%;
     background: #605567; 
-    height: 120%;
+    height: 135%;
 }
 
 .button:active {
