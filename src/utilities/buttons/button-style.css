@@ -1,6 +1,6 @@
 /* 
 <a href="#" class="button">
-    <span>View All</span>
+    <button>View All</button>
 </a> 
 
 Copy above snippet
@@ -31,7 +31,20 @@ font-family: var(--inconsolata);
     height: 56px;
     transition: all .3s ease; 
 }
-/* Change the span class name accordingly */
+/* Change the button class name accordingly */
+.button button {
+    position: relative;
+/*     Change the font size */
+    font-size: 0.8rem; 
+    line-height: 18px;
+    font-family: var(--inconsolata);
+
+    font-weight: 900;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle; 
+}
+
 .button span {
     position: relative;
 /*     Change the font size */
@@ -44,12 +57,6 @@ font-family: var(--inconsolata);
     vertical-align: middle; 
 }
 
-@media (max-width: 500px) {
-    .button span {
-        font-size: 0.7rem;
-    }
-    
-}
 .button:hover:before {
     width: 125%;
     background: #605567; 
