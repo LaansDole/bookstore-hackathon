@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="src/utilities/divider/divider.css" />
     <link rel="stylesheet" href="src/section/book-section/book-section3.css" />
     <link rel="stylesheet" href="src/section/navigation/nav-bar.css" />
+    <link rel="stylesheet" href="src/utilities/buttons/search-engine.css" />
     <link rel="stylesheet" href="src/utilities/buttons/button-style.css" />
     <link rel="stylesheet" href="src/utilities/buttons/back-to-top.css" />
     <link rel="stylesheet" href="src/section/footer/footer.css" />
@@ -49,7 +50,7 @@
     </div>
 
     <div class="menu-wrap">
-      <p><b>MENU</b></p>
+      <p><strong>MENU</strong></p>
       <input type="checkbox" class="toggler" />
       <div class="hamburger"><div></div></div>
       <div class="menu">
@@ -65,28 +66,30 @@
       </div>
     </div>
 
-    <ul class="nav">
-      <li>
-        <a href="index.html" target="_blank">
-          <i class="gg-home-alt"></i>
-          <span class="title"><b>Home</b></span>
-        </a>
-      </li>
+    <div class="top-navigation">
+      <ul class="nav">
+        <li>
+          <a href="index.html" target="_blank">
+            <i class="gg-home-alt"></i>
+            <span class="title"><b>Home</b></span>
+          </a>
+        </li>
 
-      <li>
-        <a href="book-category.html" target="_blank">
-          <i class="gg-feed"></i>
-          <div class="title"><b>Book Category</b></div>
-        </a>
-      </li>
+        <li>
+          <a href="book-category.html" target="_blank">
+            <i class="gg-feed"></i>
+            <div class="title"><b>Book Category</b></div>
+          </a>
+        </li>
 
-      <li>
-        <a href="contact-us.html" target="_blank">
-          <i class="gg-phone"></i>
-          <div class="title"><b>Contact Us</b></div>
-        </a>
-      </li>
-    </ul>
+        <li>
+          <a href="contact-us.html" target="_blank">
+            <i class="gg-phone"></i>
+            <div class="title"><b>Contact Us</b></div>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <div class="landing" id="landing">
       <div class="bg-layer"></div>
@@ -118,12 +121,16 @@
       </iframe>
     </div>
 
+    <div class="search-container">
+      <input type="text" placeholder="Search the book..." />
+      <div class="search"></div>
+    </div>
+
     <!-- Book Section 1 -->
     <div class="custom-shape-divider-top-1681408915">
       <div class="divider-title">
         <h1>Bestsellers</h1>
         <h3>Most popular picks</h3>
-
         <!-- Button Utilities -->
         <div class="view-all">
           <a href="book-category.html" class="button">
@@ -230,8 +237,9 @@
         <div class="showcase">
           <span></span>
           <div class="showcase-book-info">
+            <p>Categories</p>
             <h2>Book Title</h2>
-            <p>Author: John Doe</p>
+            <p>by John Doe</p>
           </div>
           <br />
           <!-- <p>Published: January 1, 2022</p>
@@ -247,8 +255,9 @@
             <img src="public/assets/book-placeholder.jpeg" alt="Book Cover" />
           </div>
           <div class="book-info">
+            <p>Categories</p>
             <h2>Book Title</h2>
-            <p>Author: John Doe</p>
+            <p>John Doe</p>
             <!-- <p>Published: January 1, 2022</p>
             <p>Price: $19.99</p> -->
             <div class="add-to-cart">
@@ -263,8 +272,9 @@
             <img src="public/assets/book-placeholder.jpeg" alt="Book Cover" />
           </div>
           <div class="book-info">
+            <p>Categories</p>
             <h2>Book Title</h2>
-            <p>Author: John Doe</p>
+            <p>John Doe</p>
             <!-- <p>Published: January 1, 2022</p>
             <p>Price: $19.99</p> -->
             <div class="add-to-cart">
@@ -319,42 +329,80 @@
         </div>
       </section>
     </div>
-  </body>
 
-  <footer>
-    <div class="home-footer">
-      <p>Bet you did not know that you can move the room background around</p>
-      <div class="footer-container">
-        <nav class="footer-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="book-category.html">Book Categories</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-          </ul>
-        </nav>
-        <div class="footer-social">
-          <p>Connect with me</p>
-          <div class="social-icons">
-            <a href="https://github.com/LaansDole">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/do-le-long-an-43633719a/">
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.facebook.com/laansdole/">
-              <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            </a>
+    <footer>
+      <div class="home-footer">
+        <div class="footer-divider">
+          <svg
+            class="layer-1"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+          <svg
+            class="layer-2"
+            data-name="Layer 2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+          <svg
+            class="layer-3"
+            data-name="Layer 3"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <p>Bet you did not know that you can move the room background around</p>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="book-category.html">Book Categories</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="footer-social">
+            <p>Connect with me</p>
+            <div class="social-icons">
+              <a href="https://github.com/LaansDole">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/do-le-long-an-43633719a/">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.facebook.com/laansdole/">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <p>
+              <a target="_blank" href="terms-and-conditions.html"
+                >Terms and Conditions</a
+              >
+            </p>
+            <p>© 2023 Aans Bookstore. All Rights Reserved.</p>
           </div>
         </div>
-        <div class="footer-info">
-          <p>
-            <a target="_blank" href="terms-and-conditions.html"
-              >Terms and Conditions</a
-            >
-          </p>
-          <p>© 2023 Aans Bookstore. All Rights Reserved.</p>
-        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </body>
 </html>

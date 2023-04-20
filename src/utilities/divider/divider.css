@@ -111,10 +111,56 @@
     box-shadow: var(--shadow);
     display: grid;
     grid-gap: 20px;
-    padding: 0 3rem 3rem 3rem;
+    padding: 0;
     border-radius: 65% 35%;
     background-color: black;
     height: max-content;
     z-index: 101;
     margin: 0 auto;
+    width: 70%;
+}
+
+.footer-divider {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.footer-divider .layer-1 {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+}
+
+.footer-divider .layer-1 .shape-fill {
+    fill: rgb(232, 223, 223);
+}
+
+.footer-divider .layer-2 {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+    transform: translateY(-110%);
+}
+
+.footer-divider .layer-2 .shape-fill {
+    fill: whitesmoke
+}
+
+.footer-divider .layer-3 {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+    transform: translateY(-220%);
+}
+
+.footer-divider .layer-3 .shape-fill {
+    fill: white
 }

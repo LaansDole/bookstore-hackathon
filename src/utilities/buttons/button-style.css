@@ -16,7 +16,9 @@ position: relative;
 margin: auto;
 transition: all .2s ease;
 padding-top: 19px;
+font-family: var(--inconsolata);
 }
+
 .button:before {
     content: "";
     position: absolute;
