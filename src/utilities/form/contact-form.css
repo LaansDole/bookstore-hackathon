@@ -46,6 +46,7 @@
     color: #F5F5F5;
     width: 100%;
     font-size: 1.2rem;
+    font-family: var(--avenir);
   }
   
   .msg textarea{

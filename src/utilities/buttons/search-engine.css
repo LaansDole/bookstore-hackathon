@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
 .search-container {
   position: relative;
   margin: 0 auto;
@@ -12,7 +11,7 @@
   bottom: 0;
   left: 0;
   width: 10%;
-  height: 80px;
+  height: 50px;
   background: var(--primary-color);
   border-radius: 27px;
   transition: all 1s;
@@ -51,7 +50,7 @@
   transition: all 0.5s;
 }
 .search-container input {
-  font-family: 'Inconsolata', monospace;
+  font-family: var(--inconsolata);
   position: absolute;
   margin: auto;
   top: 0;

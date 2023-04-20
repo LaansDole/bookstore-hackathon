@@ -29,7 +29,14 @@
     "showcase showcase top-box-b";
   padding: 20px;
   margin-top: 30%;
-  font-family: "Raleway", sans-serif;
+}
+
+.book-section2 p {
+  font-family: var(--raleway);
+}
+
+.book-section2 h2 {
+  font-family: var(--roboto);
 }
 
 /* Showcase */
@@ -76,7 +83,9 @@
 .showcase .showcase-book-info {
   font-size: 1.3rem;
   display: grid;
-  gap: 50px;
+  gap: 25px;
+  position: relative;
+  z-index: 5;
 }
 
 .showcase .showcase-add-to-cart {
@@ -86,6 +95,13 @@
   height: 20px;
   margin-bottom: 50px;
 }
+
+.showcase .showcase-add-to-cart a span {
+  font-size: 1.2rem;
+  /* background: transparent; */
+  margin: 0 auto;
+}
+
 
 /* Top Box */
 .top-box {
