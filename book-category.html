@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/index.css" />
+    <link rel="stylesheet" href="src/section/navigation/menu.css" />
+    <link rel="stylesheet" href="src/utilities/background/landing-cover.css" />
+    <link rel="stylesheet" href="src/section/book-section/book-section.css" />
+    <link
+      rel="stylesheet"
+      href="src/section/book-section/book-all-categories.css"
+    />
+    <link rel="stylesheet" href="src/utilities/background/room-bg.css" />
+    <link rel="stylesheet" href="src/utilities/divider/divider.css" />
+    <link rel="stylesheet" href="src/section/book-section/book-section3.css" />
+    <link rel="stylesheet" href="src/section/navigation/nav-bar.css" />
+    <link rel="stylesheet" href="src/utilities/buttons/search-engine.css" />
+    <link rel="stylesheet" href="src/utilities/buttons/button-style.css" />
+    <link rel="stylesheet" href="src/utilities/buttons/back-to-top.css" />
+    <link rel="stylesheet" href="src/section/footer/footer.css" />
+
+    <!-- Nav Bar icons -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/feed.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/phone.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Bookstore hackathon</title>
+  </head>
+  <body>
+    <div class="back-to-top">
+      <a href="#landing" target="_top" class="back-to-top">
+        <img src="public/assets/back-to-top.gif" alt="back-to-top" width="75" />
+      </a>
+    </div>
+
+    <div class="menu-wrap">
+      <p><strong>MENU</strong></p>
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="book-category.html">Book Category</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-navigation">
+      <ul class="nav">
+        <li>
+          <a href="index.html">
+            <i class="gg-home-alt"></i>
+            <span class="title"><b>Home</b></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="book-category.html">
+            <i class="gg-feed"></i>
+            <div class="title"><b>Book Category</b></div>
+          </a>
+        </li>
+
+        <li>
+          <a href="contact-us.html">
+            <i class="gg-phone"></i>
+            <div class="title"><b>Contact Us</b></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="landing" id="landing">
+      <div class="bg-layer"></div>
+      <div class="content">
+        <img
+          src="public/assets/book-logo1.jpeg"
+          class="logo"
+          alt="Traversy Media"
+        />
+        <div class="title"><b>Welcome to Aans</b></div>
+        <div class="title bookstore"><b>Book Store</b></div>
+      </div>
+    </div>
+
+    <div class="sketchfab-embed-wrapper">
+      <iframe
+        title="Bookstore Background"
+        frameborder="0"
+        allowfullscreen="true"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+        allow="autoplay; xr-spatial-tracking"
+        xr-spatial-tracking
+        execution-while-out-of-viewport
+        execution-while-not-rendered
+        web-share
+        src="https://sketchfab.com/models/c370f7e06e3c4b55ac35cf48008c77ff/embed?autostart=1&scrollwheel=0&camera=0&ui_stop=0&autospin=0.007"
+      >
+      </iframe>
+    </div>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search the book..." />
+      <div class="search"></div>
+    </div>
+
+    <!-- Book Section 1 -->
+    <div class="custom-shape-divider-top-1681408915">
+      <div class="divider-title">
+        <h1>Categories</h1>
+        <h3>Books for everyone</h3>
+      </div>
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          class="shape-fill"
+        ></path>
+      </svg>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card__image-holder">
+          <img
+            class="card__image"
+            src="https://source.unsplash.com/300x225/?wave"
+            alt="wave"
+          />
+        </div>
+        <div class="card-title">
+          <a href="#" class="toggle-info btn">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <h2>
+            Card title
+            <small>Image from unsplash.com</small>
+          </h2>
+        </div>
+        <div class="card-flap flap1">
+          <div class="card-description">
+            This grid is an attempt to make something nice that works on touch
+            devices. Ignoring hover states when they're not available etc.
+          </div>
+          <div class="card-flap flap2">
+            <div class="card-actions">
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__image-holder">
+          <img
+            class="card__image"
+            src="https://source.unsplash.com/300x225/?beach"
+            alt="beach"
+          />
+        </div>
+        <div class="card-title">
+          <a href="#" class="toggle-info btn">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <h2>
+            Card title
+            <small>Image from unsplash.com</small>
+          </h2>
+        </div>
+        <div class="card-flap flap1">
+          <div class="card-description">
+            This grid is an attempt to make something nice that works on touch
+            devices. Ignoring hover states when they're not available etc.
+          </div>
+          <div class="card-flap flap2">
+            <div class="card-actions">
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__image-holder">
+          <img
+            class="card__image"
+            src="https://source.unsplash.com/300x225/?mountain"
+            alt="mountain"
+          />
+        </div>
+        <div class="card-title">
+          <a href="#" class="toggle-info btn">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <h2>
+            Card title
+            <small>Image from unsplash.com</small>
+          </h2>
+        </div>
+        <div class="card-flap flap1">
+          <div class="card-description">
+            This grid is an attempt to make something nice that works on touch
+            devices. Ignoring hover states when they're not available etc.
+          </div>
+          <div class="card-flap flap2">
+            <div class="card-actions">
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__image-holder">
+          <img
+            class="card__image"
+            src="https://source.unsplash.com/300x225/?field"
+            alt="field"
+          />
+        </div>
+        <div class="card-title">
+          <a href="#" class="toggle-info btn">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <h2>
+            Card title
+            <small>Image from unsplash.com</small>
+          </h2>
+        </div>
+        <div class="card-flap flap1">
+          <div class="card-description">
+            This grid is an attempt to make something nice that works on touch
+            devices. Ignoring hover states when they're not available etc.
+          </div>
+          <div class="card-flap flap2">
+            <div class="card-actions">
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__image-holder">
+          <img
+            class="card__image"
+            src="https://source.unsplash.com/300x225/?water"
+            alt="water"
+          />
+        </div>
+        <div class="card-title">
+          <a href="#" class="toggle-info btn">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <h2>
+            Card title
+            <small>Image from unsplash.com</small>
+          </h2>
+        </div>
+        <div class="card-flap flap1">
+          <div class="card-description">
+            This grid is an attempt to make something nice that works on touch
+            devices. Ignoring hover states when they're not available etc.
+          </div>
+          <div class="card-flap flap2">
+            <div class="card-actions">
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__image-holder">
+          <img
+            class="card__image"
+            src="https://source.unsplash.com/300x225/?river"
+            alt="river"
+          />
+        </div>
+        <div class="card-title">
+          <a href="#" class="toggle-info btn">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <h2>
+            Card title
+            <small>Image from unsplash.com</small>
+          </h2>
+        </div>
+        <div class="card-flap flap1">
+          <div class="card-description">
+            This grid is an attempt to make something nice that works on touch
+            devices. Ignoring hover states when they're not available etc.
+          </div>
+          <div class="card-flap flap2">
+            <div class="card-actions">
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__image-holder">
+          <img
+            class="card__image"
+            src="https://source.unsplash.com/300x225/?kite"
+            alt="kite"
+          />
+        </div>
+        <div class="card-title">
+          <a href="#" class="toggle-info btn">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <h2>
+            Card title
+            <small>Image from unsplash.com</small>
+          </h2>
+        </div>
+        <div class="card-flap flap1">
+          <div class="card-description">
+            This grid is an attempt to make something nice that works on touch
+            devices. Ignoring hover states when they're not available etc.
+          </div>
+          <div class="card-flap flap2">
+            <div class="card-actions">
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__image-holder">
+          <img
+            class="card__image"
+            src="https://source.unsplash.com/300x225/?underwater"
+            alt="underwater"
+          />
+        </div>
+        <div class="card-title">
+          <a href="#" class="toggle-info btn">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <h2>
+            Card title
+            <small>Image from unsplash.com</small>
+          </h2>
+        </div>
+        <div class="card-flap flap1">
+          <div class="card-description">
+            This grid is an attempt to make something nice that works on touch
+            devices. Ignoring hover states when they're not available etc.
+          </div>
+          <div class="card-flap flap2">
+            <div class="card-actions">
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__image-holder">
+          <img
+            class="card__image"
+            src="https://source.unsplash.com/300x225/?desert"
+            alt="desert"
+          />
+        </div>
+        <div class="card-title">
+          <a href="#" class="toggle-info btn">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <h2>
+            Card title
+            <small>Image from unsplash.com</small>
+          </h2>
+        </div>
+        <div class="card-flap flap1">
+          <div class="card-description">
+            This grid is an attempt to make something nice that works on touch
+            devices. Ignoring hover states when they're not available etc.
+          </div>
+          <div class="card-flap flap2">
+            <div class="card-actions">
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="book-section3">
+        <div class="view-all">
+          <a href="book-category.html" class="button">
+            <button type="button">View All</button>
+          </a>
+        </div>
+        <div class="section3-title">
+          <h2>Audio Books</h2>
+          <p>Let your eyes rest</p>
+        </div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KJ2Lvi9kG2Q"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section class="more-books">
+        <div class="more-audio-books">
+          <img src="https://picsum.photos/500/401" alt="" />
+          <div class="inner-disc"></div>
+          <p>This is a title</p>
+        </div>
+        <div class="more-audio-books">
+          <img src="https://picsum.photos/500/402" alt="" />
+          <div class="inner-disc"></div>
+        </div>
+        <div class="more-audio-books">
+          <img src="https://picsum.photos/500/403" alt="" />
+          <div class="inner-disc"></div>
+        </div>
+        <div class="more-audio-books">
+          <img src="https://picsum.photos/500/404" alt="" />
+          <div class="inner-disc"></div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="general-footer">
+        <div class="footer-divider">
+          <svg
+            class="layer-1"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+          <svg
+            class="layer-2"
+            data-name="Layer 2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+          <svg
+            class="layer-3"
+            data-name="Layer 3"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <p>Bet you did not know that you can move the room background around</p>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="book-category.html">Book Categories</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="footer-social">
+            <p>Connect with me</p>
+            <div class="social-icons">
+              <a href="https://github.com/LaansDole">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/do-le-long-an-43633719a/">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.facebook.com/laansdole/">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <p>
+              <a href="terms-and-conditions.html">Terms and Conditions</a>
+            </p>
+            <p>© 2023 Aans Bookstore. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
