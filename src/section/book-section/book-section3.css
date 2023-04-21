@@ -12,6 +12,10 @@
     transform: rotate(-2deg);
     transform-origin: bottom;
     border-bottom-width: 12px;
+    left: 0;
+    right: 0;
+    width: 85%;
+    margin: 0;
 }
 
 .book-section3 .section3-title {
