@@ -71,7 +71,7 @@
 .showcase .showcase-book--1,
 .showcase .showcase-book--2,
 .showcase .showcase-book--3 {
-  transform: scale(4.5);
+  transform: scale(5.4);
   background-repeat: no-repeat;
   background-size: 40%;
   animation: animate 25s ease-in-out infinite;
