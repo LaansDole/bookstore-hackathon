@@ -25,39 +25,39 @@
 
 /* Change book background image */
 .book--1 .book__img, .book--1 .book__img--hover {
-  background-image: url('../../../assets/influence-ppl.png');
+  background-image: url('../../.././assets/influence-ppl.png');
 }
 
 .book--2 .book__img, .book--2 .book__img--hover {
-  background-image: url('../../../assets/myth-normal.png');
+  background-image: url('../../.././assets/myth-normal.png');
 }
 
 .book--3 .book__img, .book--3 .book__img--hover {
-  background-image: url('../../../assets/harry-potter/harry-potter-7_2.jpeg');
+  background-image: url('../../.././assets/harry-potter/harry-potter-7_2.jpeg');
 }
 
 .book--4 .book__img, .book--4 .book__img--hover {
-  background-image: url('../../../assets/harry-potter/harry-potter-1.jpeg');
+  background-image: url('../../.././assets/harry-potter/harry-potter-1.jpeg');
 }
 
 .book--5 .book__img, .book--5 .book__img--hover {
-  background-image: url('../../../assets/littleprince.jpeg');
+  background-image: url('../../.././assets/littleprince.jpeg');
 }
 
 .book--6 .book__img, .book--6 .book__img--hover {
-  background-image: url('../../../assets/harry-potter/harry-potter-4.jpeg');
+  background-image: url('../../.././assets/harry-potter/harry-potter-4.jpeg');
 }
 
 .book--7 .book__img, .book--7 .book__img--hover {
-  background-image: url('../../../assets/not-give-a-fk.jpeg');
+  background-image: url('../../.././assets/not-give-a-fk.jpeg');
 }
 
 .book--8 .book__img, .book--8 .book__img--hover {
-  background-image: url('../../../assets/');
+  background-image: url('../../.././assets/');
 }
 
 .book--9 .book__img, .book--9 .book__img--hover {
-  background-image: url('../../../assets/');
+  background-image: url('../../.././assets/');
 }
 
 .book__img {
