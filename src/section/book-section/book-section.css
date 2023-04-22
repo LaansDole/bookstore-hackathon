@@ -25,19 +25,39 @@
 
 /* Change book background image */
 .book--1 .book__img, .book--1 .book__img--hover {
-  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-image: url('../../../public/assets/influence-ppl.png');
 }
 
-.book--1 .book__img, .book--1 .book__img--hover {
-  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+.book--2 .book__img, .book--2 .book__img--hover {
+  background-image: url('../../../public/assets/myth-normal.png');
 }
 
-.book--1 .book__img, .book--1 .book__img--hover {
-  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+.book--3 .book__img, .book--3 .book__img--hover {
+  background-image: url('../../../public/assets/harry-potter/harry-potter-7_2.jpeg');
 }
 
-.book--1 .book__img, .book--1 .book__img--hover {
-  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+.book--4 .book__img, .book--4 .book__img--hover {
+  background-image: url('../../../public/assets/harry-potter/harry-potter-1.jpeg');
+}
+
+.book--5 .book__img, .book--5 .book__img--hover {
+  background-image: url('../../../public/assets/littleprince.jpeg');
+}
+
+.book--6 .book__img, .book--6 .book__img--hover {
+  background-image: url('../../../public/assets/harry-potter/harry-potter-4.jpeg');
+}
+
+.book--7 .book__img, .book--7 .book__img--hover {
+  background-image: url('../../../public/assets/not-give-a-fk.jpeg');
+}
+
+.book--8 .book__img, .book--8 .book__img--hover {
+  background-image: url('../../../public/assets/');
+}
+
+.book--9 .book__img, .book--9 .book__img--hover {
+  background-image: url('../../../public/assets/');
 }
 
 .book__img {
@@ -72,16 +92,13 @@ top: 0;
 
 .book {
 transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-/* background-color: #fff; */
   width: 100%;
 position: relative;
 border-radius: 12px;
 overflow: hidden;
-/* box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1); */
 }
 
 .book:hover, .book__info:hover {
-/* box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1); */
   transform: scale(1, 1);
   background-color: #fff;
 }
@@ -112,6 +129,7 @@ color: #F5F5F5;
   margin-top: 5px;
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
 }
 
 .book__by {
