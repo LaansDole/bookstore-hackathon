@@ -25,19 +25,39 @@
 
 /* Change book background image */
 .book--1 .book__img, .book--1 .book__img--hover {
-  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-image: url('../../../public/assets/influence-ppl.png');
 }
 
-.book--1 .book__img, .book--1 .book__img--hover {
-  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+.book--2 .book__img, .book--2 .book__img--hover {
+  background-image: url('../../../public/assets/littleprince.jpeg');
 }
 
-.book--1 .book__img, .book--1 .book__img--hover {
-  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+.book--3 .book__img, .book--3 .book__img--hover {
+  background-image: url('../../../public/assets/harry-potter/harry-potter-7_2.jpeg');
 }
 
-.book--1 .book__img, .book--1 .book__img--hover {
-  background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+.book--4 .book__img, .book--4 .book__img--hover {
+  background-image: url('../../../public/assets/');
+}
+
+.book--5 .book__img, .book--5 .book__img--hover {
+  background-image: url('../../../public/assets/');
+}
+
+.book--6 .book__img, .book--6 .book__img--hover {
+  background-image: url('../../../public/assets/');
+}
+
+.book--7 .book__img, .book--7 .book__img--hover {
+  background-image: url('../../../public/assets/');
+}
+
+.book--8 .book__img, .book--8 .book__img--hover {
+  background-image: url('../../../public/assets/');
+}
+
+.book--9 .book__img, .book--9 .book__img--hover {
+  background-image: url('../../../public/assets/');
 }
 
 .book__img {
@@ -112,6 +132,7 @@ color: #F5F5F5;
   margin-top: 5px;
   margin-bottom: 10px;
   font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
 }
 
 .book__by {
