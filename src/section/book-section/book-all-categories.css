@@ -1,12 +1,9 @@
 a.btn {
-    background: #0096a0;
-    border-radius: 4px;
+    background: wheat;
     box-shadow: 0 2px 0px 0 rgba(0,0,0,0.25);
     color: #ffffff;
     display: inline-block;
     padding: 6px 30px 8px;
-    position: relative;
-    text-decoration: none;
     transition: all 0.1s 0s ease-out;
 }
 .no-touch a.btn:hover {
@@ -22,12 +19,12 @@ a.btn {
     transition: all 0.025s 0s ease-out;
 }
 .cards {
-    margin: 0 auto 40px auto;
+    margin: 0 auto 30% auto;
     max-width: 960px;
     text-align: center;
 }
 .card {
-    background: #ffffff;
+    background: transparent;
     display: inline-block;
     margin: 8px;
     max-width: 300px;
@@ -37,12 +34,11 @@ a.btn {
     transition: all 0.3s 0s ease-in;
     width: 300px;
     z-index: 1;
-    border-radius: 10px;
 }
 .card img {
     max-width: 300px;
-    border-radius: 10px;
-
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
 }
 .card .card__image-holder {
     background: rgba(0,0,0,0.1);
@@ -50,10 +46,14 @@ a.btn {
     padding-bottom: 75%;
 }
 .card .card-title {
-    background: #ffffff;
+    background: black;
     padding: 6px 15px 10px;
     position: relative;
     z-index: 0;
+    opacity: 0.9;
+    margin-top: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 .card .card-title a.toggle-info {
     border-radius: 32px;
@@ -87,6 +87,10 @@ a.btn {
     letter-spacing: -0.05em;
     margin: 0;
     padding: 0;
+    color: white;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
 }
 .card .card-title h2 small {
     display: block;
