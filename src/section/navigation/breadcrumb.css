@@ -11,9 +11,9 @@
       display: inline-block;
       overflow: hidden;
       border-radius: 5px;
-      /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
       counter-reset: flag; 
       transform: scale(0.9);
+      left: 0;
   }
   
   .breadcrumb a {
