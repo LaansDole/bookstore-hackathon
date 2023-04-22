@@ -1,6 +1,7 @@
 .category-footer,
 .home-footer,
-.general-footer {
+.general-footer,
+.sub-category-footer {
     position: relative;
     bottom: 0;
     left: 0;
@@ -9,8 +10,13 @@
     padding: 0 0 30px 0;
 }
 
-.category-footer {
+.category-footer,
+.sub-category-footer {
     margin-top: 25%;
+}
+
+.sub-category-footer {
+    transform: translateY(8%);
 }
 
 .home-footer {
