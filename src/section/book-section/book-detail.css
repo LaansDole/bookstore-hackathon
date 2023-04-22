@@ -174,14 +174,13 @@
         background-color: black;
     }
     .card {
-        margin-top: -15%;
+        margin-top: 0;
         margin-bottom: 5%;
     }
 }
 
 @media screen and (max-width:500px) {
     .card {
-        margin-top: 0;
-
+        margin-top: 60%;
     }
 }
