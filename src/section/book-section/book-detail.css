@@ -101,7 +101,7 @@
 .product-detail ul li{
     margin: 0;
     list-style: none;
-    background: url('../../../assets/checked.png') left center no-repeat;
+    background: url('../../.././assets/checked.png') left center no-repeat;
     background-size: 18px;
     padding-left: 1.7rem;
     margin: 0.4rem 0;
