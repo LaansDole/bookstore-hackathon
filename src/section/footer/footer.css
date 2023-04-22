@@ -1,23 +1,5 @@
-.category-footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #FFFFFF;
-    margin-top: 25%;
-    padding: 0 0 30px 0;
-}
-
-.home-footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #FFFFFF;
-    padding-bottom: 30px;
-    margin-top: -400px;
-}
-
+.category-footer,
+.home-footer,
 .general-footer {
     position: relative;
     bottom: 0;
@@ -25,6 +7,14 @@
     width: 100%;
     background-color: #FFFFFF;
     padding: 0 0 30px 0;
+}
+
+.category-footer {
+    margin-top: 25%;
+}
+
+.home-footer {
+    margin-top: -400px;
 }
 
 footer div p {

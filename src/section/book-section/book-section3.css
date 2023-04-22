@@ -85,7 +85,7 @@
 max-width: 100%;
 box-shadow: var(--shadow);
 border-radius: 50%;
-min-height: 295px;
+max-height: 295px;
 }
 
 @media (max-width:780px) {
