@@ -19,7 +19,7 @@ a.btn {
     transition: all 0.025s 0s ease-out;
 }
 .cards {
-    margin: 0 auto 30% auto;
+    margin: 0 auto 5% auto;
     max-width: 960px;
     text-align: center;
 }
