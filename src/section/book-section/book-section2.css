@@ -82,15 +82,15 @@
 }
 
 .showcase .showcase-book--1 {
-  background-image: url("../../../public/assets/clean-code.jpeg");
+  background-image: url("../../../assets/clean-code.jpeg");
 }
 
 .showcase .showcase-book--2 {
-  background-image: url("../../../public/assets/harry-potter/harry-potter-5.jpeg");
+  background-image: url("../../../assets/harry-potter/harry-potter-5.jpeg");
 }
 
 .showcase .showcase-book--3 {
-  background-image: url("../../../public/assets/influence-ppl.png");
+  background-image: url("../../../assets/influence-ppl.png");
 }
 
 @keyframes animate {

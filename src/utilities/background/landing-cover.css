@@ -9,7 +9,7 @@
   position: absolute;
   height: 70vh;
   width: 125%;
-  background-image: url("../../../public/assets/cover-bookstore.jpeg");
+  background-image: url("../../../assets/cover-bookstore.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -21,7 +21,7 @@
     content: '';
     height: 70vh;
     width: 125%;
-    background-image: url("../../../public/assets/cover-bookstore.jpeg");
+    background-image: url("../../../assets/cover-bookstore.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
