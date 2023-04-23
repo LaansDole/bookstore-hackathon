@@ -20,13 +20,14 @@
     right: 0;
     /* transform: translate(-50%, -50%); */
     width: 100%;
-    max-width: 550px;
+    max-width: 650px;
     background: rgba(0,0,0,0.8);
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     transform: scale(1.2);
     font-size: 1.5rem;
+    z-index: 500;
   }
   
   .contact-us .title h1{
@@ -38,7 +39,19 @@
   .contact-form{
     display: flex;
   }
-  
+
+  .other-fields {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: var(--avenir);
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: left;
+    gap: 20px;
+    width: fit-content;
+  }
+
   .input-fields{
     display: flex;
     flex-direction: column;
@@ -80,15 +93,25 @@
     color: #F5F5F5;
   }
   
-  .send-btn {
-      background: var(--primary-color);
+  .send-btn,
+  .reset-btn {
       text-align: center;
-      padding: 15px;
-      border-radius: 5px;
+      padding: 10px;
+      border-radius: 12px;
       color: #fff;
       cursor: pointer;
       text-transform: uppercase;
       display: block;
+      margin-top: 10px;
+      font-size: 1.2rem;
+  }
+
+  .send-btn {
+    background: var(--primary-color);
+  }
+
+  .reset-btn {
+    background: var(--secondary-color);
   }
   
   @media screen and (max-width: 780px){

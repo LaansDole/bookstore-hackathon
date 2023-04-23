@@ -131,7 +131,7 @@
     <div class="custom-shape-divider-top-1681408915">
       <div class="divider-title">
         <h1>Contact Us</h1>
-        <h4>Feedback? Complaints?</h4>
+        <h4>Feedback? Books?</h4>
       </div>
       <svg
         data-name="Layer 1"
@@ -162,9 +162,62 @@
           <input type="text" class="input" placeholder="Phone" />
           <input type="text" class="input" placeholder="Subject" />
         </div>
+        <div class="other-fields">
+          <div class="purpose-fields">
+            <label for="contact-purpose">Purpose:</label>
+            <select id="contact-purpose" name="contact-purpose">
+              <option value="sell-books">I want to sell books</option>
+              <option value="buy-books">I want to buy books</option>
+            </select>
+          </div>
+          <div class="preference">
+            <span>Preference:</span>
+            <div>
+              <input
+                type="checkbox"
+                id="contact-by-email"
+                name="contact-preference"
+                value="email"
+              />
+              <label for="contact-by-email">By email</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="contact-by-phone"
+                name="contact-preference"
+                value="phone"
+              />
+              <label for="contact-by-phone">By phone</label>
+            </div>
+          </div>
+          <div class="newsletter">
+            <span>Receive weekly newsletter:</span>
+            <div>
+              <input
+                type="radio"
+                id="newsletter-yes"
+                name="newsletter"
+                value="yes"
+                checked
+              />
+              <label for="newsletter-yes">Yes</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="newsletter-no"
+                name="newsletter"
+                value="no"
+              />
+              <label for="newsletter-no">No</label>
+            </div>
+          </div>
+        </div>
         <div class="msg">
           <textarea placeholder="Message"></textarea>
           <a class="send-btn" href="contact-us.html" target="_self">send</a>
+          <a class="reset-btn" href="contact-us.html" target="_self">Reset</a>
         </div>
       </div>
     </div>
@@ -218,7 +271,7 @@
             </ul>
           </nav>
           <div class="footer-social">
-            <p>Connect with me</p>
+            <p>About Us</p>
             <div class="social-icons">
               <a href="https://github.com/LaansDole">
                 <i class="fa fa-github" aria-hidden="true"></i>
