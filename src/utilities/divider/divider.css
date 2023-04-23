@@ -1,4 +1,18 @@
-/* Divider section 1 */
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Do Le Long An
+  ID: s3963207
+  Acknowledgement: 
+  MDN Web Docs, RMIT Canvas (HTML, CSS learning materials)
+  shapedivider.app (For wavy divider svg), 
+  sketchfab.com (For the 3D background)
+  unplash.com (For quality images)
+  flaticon.com, fontawesome.com (For icons and fonts)
+  dribble.com, canva.com, Codepen.com (For design idea inspiration) */
+
+/* Divider section 1 & 2 */
 .custom-shape-divider-top-1681408915 {
     position: relative;
     top: 0;
@@ -97,7 +111,7 @@
     }
 }
 
-/* Divider section 2 */
+/* Divider section 2 heading */
 .custom-shape-divider-top-1681408915 .divider-title h4 {
     transform: rotate(180deg) translateY(-155px) translateX(-190px);
 }
@@ -116,6 +130,7 @@
     width: 70%;
 }
 
+/* Footer divider and book alike styling */
 .footer-divider {
     position: absolute;
     bottom: 100%;
