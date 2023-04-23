@@ -97,9 +97,9 @@ max-height: 295px;
 @media (max-width:600px) {
     .book-section3 img {
         max-width: 150%;
-        border-radius: 10%;
+        border-radius: 65% 35%;
         margin: 0 auto;
-        transform: translateX(-15%);
+        transform: translate(-15%, -50px);
     }
 
     .section3-title p {
