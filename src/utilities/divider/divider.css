@@ -78,7 +78,7 @@
         border-bottom-width: 10px;
     }
 
-    .custom-shape-divider-top-1681408915 .divider-title h4 {
+    .custom-shape-divider-top-1681408915 .divider-title h3,h4 {
         display: none;
     }
 
@@ -91,10 +91,6 @@
 }
 
 @media (max-width:375px) {
-    .custom-shape-divider-top-1681408915 .divider-title h3 {
-        display: none;
-    }
-
     .custom-shape-divider-top-1681408915 .divider-title h1 {
         transform: rotate(180deg) translateY(-180px) translateX(-25px);
         font-size: 2.2rem;
