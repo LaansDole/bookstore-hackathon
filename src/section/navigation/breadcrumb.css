@@ -23,6 +23,7 @@
       counter-reset: flag; 
       transform: scale(0.9);
       left: 0;
+      font-family: var(--avenir);
   }
   
   .breadcrumb a {

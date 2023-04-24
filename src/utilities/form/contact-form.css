@@ -104,6 +104,7 @@
       display: block;
       margin-top: 10px;
       font-size: 1.2rem;
+      font-family: var(--avenir);
   }
 
   .send-btn {

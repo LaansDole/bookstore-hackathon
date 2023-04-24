@@ -114,6 +114,7 @@ margin-right: 0;
 }
 .footer-social p{
     transform: translateX(-17px);
+    font-family: var(--roboto);
 }
 .footer-social i {
     transform: scale(2.5) translateX(-6px);
