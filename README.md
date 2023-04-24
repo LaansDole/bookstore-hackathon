@@ -1,6 +1,9 @@
 # View my bookstore website here: [Aans Bookstore](https://laansdole.github.io/bookstore-hackathon_s3963207/)
 ## Contributor: Do Le Long An - s3963207
 
+### My Website Link: https://laansdole.github.io/bookstore-hackathon_s3963207/
+### My Project GitHub repository Link: https://github.com/LaansDole/bookstore-hackathon_s3963207
+
 #### Project started date: 03/04/2023
 
 #### Project finished date: 24/04/2023
